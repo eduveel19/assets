@@ -86,7 +86,7 @@ let filterCompeticionFutbol = `
             <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
             <div class="uk-navbar-left">
 
-                <ul class="uk-subnav uk-subnav-pill">
+            <ul class="uk-subnav uk-subnav-pill">
             <!-- UEFA CHAMPIONS LEAGUE -->
             <li uk-filter-control=".tag-ucl"><a href="#">
             <img alt="UEFA CHAMPIONS LEAGUE" class="competition ucl" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
