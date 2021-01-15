@@ -42,9 +42,9 @@ for(const ele of document.getElementsByClassName("sidebar-featured")){ele.innerH
 
 let postSidebar = `
 <!--POST-->
-          <h6>App</h6>
+          <h6>Telegram</h6>
           <hr>
-           <iframe width="100%" height="670" scrolling="no" src="//slowdsports.com/app/appdl.php" frameborder="0"></iframe>
+           <iframe width="100%" height="670" scrolling="no" src="//assets.slowdsports.com/ads/tg.html" frameborder="0"></iframe>
 <!--/POST-->
 `;
 for(const ele of document.getElementsByClassName("sidebar-post")){ele.innerHTML=(postSidebar)};
