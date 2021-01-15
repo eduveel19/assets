@@ -2,7 +2,7 @@ let adsSidebarVIP = `
 <!--BANNER-->
           <h6>VIP</h6>
           <hr>
-           <iframe width="100%" height="70" scrolling="no" src="//slowdsports.com/ads/banneradcash.php" frameborder="0"></iframe>
+           <iframe width="100%" height="70" scrolling="no" src="//assets.slowdsports.com/ads/banneradcash.php" frameborder="0"></iframe>
 <!--/BANNER-->
 `;
 for(const ele of document.getElementsByClassName("sidebar-vip")){ele.innerHTML=(adsSidebarVIP)};
@@ -11,7 +11,7 @@ let adsSidebar1 = `
 <!--BANNER-->
           <h6>Ads</h6>
           <hr>
-           <iframe width="100%" height="70" scrolling="no" src="//slowdsports.com/ads/bannercash.php" frameborder="0"></iframe>
+           <iframe width="100%" height="70" scrolling="no" src="//assets.slowdsports.com/ads/bannercash.php" frameborder="0"></iframe>
 <!--/BANNER-->
 `;
 for(const ele of document.getElementsByClassName("sidebar-ads1")){ele.innerHTML=(adsSidebar1)};
