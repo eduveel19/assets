@@ -22,7 +22,7 @@ let adsSidebar2 = `
           <hr>
           <a href="#mlb" uk-scroll class="link-featured">
            <div class="blocker"></div>
-           <iframe width="100%" height="415" scrolling="no" src="//slowdsports.com/tv" frameborder="0" allowfullscreen></iframe>
+           <iframe width="100%" height="415" scrolling="no" src="//futbol.slowdsports.com/featured" frameborder="0" allowfullscreen></iframe>
           </a>
        <!--/FEATURED-->
 `;
