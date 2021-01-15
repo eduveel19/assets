@@ -53,7 +53,7 @@ let standingsSidebar = `
 <!--STANDINGS-->
           <h6>Standings</h6>
           <hr>
-           <iframe width="100%" height="720" scrolling="no" src="//slowdsports.com/old/soccer/table.php" frameborder="0"></iframe>
+           <iframe width="100%" height="720" scrolling="no" src="//futbol.slowdsports.com//table/" frameborder="0"></iframe>
 <!--/STANDINGS-->
 `;
 for(const ele of document.getElementsByClassName("sidebar-standings")){ele.innerHTML=(standingsSidebar)};
