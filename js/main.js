@@ -87,8 +87,18 @@ let filterCompeticionFutbol = `
             <div class="uk-navbar-left">
 
                 <ul class="uk-subnav uk-subnav-pill">
-            <!-- MLB -->
-            <li><a href="#mlb" uk-scroll><img alt="MLB" class="competition mlb" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a></li>
+            <!-- UEFA CHAMPIONS LEAGUE -->
+            <li uk-filter-control=".tag-ucl"><a href="#">
+            <img alt="UEFA CHAMPIONS LEAGUE" class="competition ucl" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            <!-- UEFA EUROPA LEAGUE -->
+            <li uk-filter-control=".tag-uel"><a href="#">
+            <img alt="UEFA EUROPA LEAGUE" class="competition uel" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            <!-- CONCACAF LEAGUE -->
+            <li uk-filter-control=".tag-concacafl"><a href="#">
+            <img alt="CONCACAF LEAGUE" class="competition concacaf" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
 
             <!-- END Competitions -->       
             </ul>  
