@@ -115,11 +115,6 @@ for(const ele of document.getElementsByClassName("filter-competicion-tennis")){e
 for(const ele of document.getElementsByClassName("filter-competicion-f1")){ele.innerHTML=(filterCompeticionFutbol)};
 for(const ele of document.getElementsByClassName("filter-competicion-box")){ele.innerHTML=(filterCompeticionFutbol)};
 
-let scheduleCaption = `
-<caption>Semana - XX</caption>
-`;
-for(const ele of document.getElementsByClassName("schedule-caption")){ele.innerHTML=(scheduleCaption)};
-
 let offcanvas = `
 <!-- OFFCANVAS -->
 		<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
