@@ -153,3 +153,12 @@ let offcanvas = `
 		<!-- /OFFCANVAS -->
 `;
 for(const ele of document.getElementsByClassName("offcanvas")){ele.innerHTML=(offcanvas)};
+
+let footer = `
+<footer class="uk-section uk-section-small uk-section-muted footer">
+    <div class="uk-container">
+	<p class="uk-text-small uk-text-center">Sitio Creado por:<a href="https://t.me/iraffleclub"> el equipo de iRaffle </a>| Con la Tecnología de <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></p>
+	</div>
+	</footer>
+`;
+for(const ele of document.getElementsByClassName("footer")){ele.innerHTML=(footer)};

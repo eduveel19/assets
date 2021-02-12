@@ -2,7 +2,7 @@ let adsSidebarVIP = `
 <!--BANNER-->
           <h6>VIP</h6>
           <hr>
-           <iframe width="100%" height="70" scrolling="no" src="//assets.slowdsports.com/ads/bannercash.html" frameborder="0"></iframe>
+           <iframe width="100%" height="70" scrolling="no" src="//eduveel19.github.io/assets/ads/bannercash.html" frameborder="0"></iframe>
 <!--/BANNER-->
 `;
 for(const ele of document.getElementsByClassName("sidebar-vip")){ele.innerHTML=(adsSidebarVIP)};
@@ -11,7 +11,7 @@ let adsSidebar1 = `
 <!--BANNER-->
           <h6>Ads</h6>
           <hr>
-           <iframe width="100%" height="70" scrolling="no" src="//assets.slowdsports.com/ads/banner.html" frameborder="0"></iframe>
+           <iframe width="100%" height="70" scrolling="no" src="//eduveel19.github.io/assets/ads/banner.html" frameborder="0"></iframe>
 <!--/BANNER-->
 `;
 for(const ele of document.getElementsByClassName("sidebar-ads1")){ele.innerHTML=(adsSidebar1)};
@@ -22,7 +22,7 @@ let adsSidebar2 = `
           <hr>
           <a href="#mlb" uk-scroll class="link-featured">
            <div class="blocker"></div>
-           <iframe width="100%" height="415" scrolling="no" src="//assets.slowdsports.com/ads/banner-adcafe.html" frameborder="0" allowfullscreen></iframe>
+           <iframe width="100%" height="415" scrolling="no" src="//eduveel19.github.io/assets/ads/banner-adcafe.html" frameborder="0" allowfullscreen></iframe>
           </a>
        <!--/FEATURED-->
 `;
@@ -44,7 +44,7 @@ let postSidebar = `
 <!--POST-->
           <h6>Telegram</h6>
           <hr>
-           <iframe width="100%" height="670" scrolling="no" src="//assets.slowdsports.com/ads/tg.html" frameborder="0"></iframe>
+           <iframe width="100%" height="670" scrolling="no" src="//eduveel19.github.io/assets/ads/tg.html" frameborder="0"></iframe>
 <!--/POST-->
 `;
 for(const ele of document.getElementsByClassName("sidebar-post")){ele.innerHTML=(postSidebar)};
