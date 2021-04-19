@@ -1,1 +1,429 @@
-irafflesport.tk
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SlowD Sports</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://i.ibb.co/PNytkmd/logob-1.png">
+        <!--UIKit Styles-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+        <!--Schedule Styles-->
+        <link rel="stylesheet" href="//eduveel19.github.io/assets/css/schedule.css">
+        <!--Main Styles-->
+        <link rel="stylesheet" href="//eduveel19.github.io/assets/css/main.css">
+        <!--Flags-->
+        <link rel="stylesheet" href="//eduveel19.github.io/assets/css/flags.css">
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!--FontAwesome Animated -->
+        <link rel="stylesheet" href="//eduveel19.github.io/assets/css/font-awesome-animation.css">
+        <!--Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174658361-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-174658361-1');
+        </script>
+        <style>
+            .table-liga{scroll-behavior: smooth;}
+        </style>
+    </head>
+    <body>
+    
+    <!--HEADER-->
+    <div class="header-futbol"></div>
+	<!--/HEADER-->
+	<hr>
+		
+    <div class="uk-container uk-container-xlarge">
+    
+    
+    <!--ALERTA-->
+    <center>
+    <div class="uk-alert-danger" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <p>Estamos haciendo los 煤ltimos retoques a la web.</p>
+    </div>
+    </center>    
+    <!--/ALERTA-->
+  		
+	<!--SOCIAL-->
+    <div class="social-join"></div>
+    <!--/SOCIAL-->
+    <hr>
+  
+    <!--TABLE-->
+    <script src="//eduveel19.github.io/assets/js/timer/3/1/timer1.js"></script>
+    <script src="//eduveel19.github.io/assets/js/timer/3/1/timer2.js"></script>
+    <script src="//eduveel19.github.io/assets/js/timer/3/1/timer3.js"></script>
+    <script src="//eduveel19.github.io/assets/js/timer/3/1/timer4.js"></script>
+    <script src="//eduveel19.github.io/assets/js/timer/3/1/timer5.js"></script>
+    <script src="//eduveel19.github.io/assets/js/timer/3/1/timer6.js"></script>
+    <script src="//eduveel19.github.io/assets/js/timer/3/1/timer7.js"></script>
+    <script src="//eduveel19.github.io/assets/js/timer/main.js"></script>
+         
+    <!--FILTER-->
+        
+        <div class="uk-text-left" uk-grid>
+    <div class="uk-width-expand@m">
+        <p>Filtra por competici贸n:</p>
+        <div uk-sticky="sel-target: cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+
+            <ul class="uk-subnav uk-subnav-pill">
+            <!-- UEFA CHAMPIONS LEAGUE --
+            <li><a href="#ucl">
+            <img alt="UEFA CHAMPIONS LEAGUE" class="competition ucl" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            <!-- UEFA EUROPA LEAGUE --
+            <li><a href="#uel">
+            <img alt="UEFA EUROPA LEAGUE" class="competition uel" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            <!-- Premier -->
+            <li><a href="#premier">
+            <img alt="English Premier League" class="competition premier" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            <!-- LaLiga -->
+            <li><a href="#laliga">
+            <img alt="Spanish La Liga Santander" class="competition laliga" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            <!-- LaLiga -->
+            <li><a href="#laliga2">
+            <img alt="Spanish La Liga Smartbank" class="competition laliga2" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            <!-- Copa del Rey --
+            <li><a href="#cdr">
+            <img alt="Spanish Copa del Rey" class="competition copadelrey" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+            
+            <!-- Coppa Italia --
+            <li><a href="#coppa">
+            <img alt="Italia Coppa Italia" class="competition coppaitalia" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>                
+            </li>
+            
+            <!-- CONCACAF LEAGUE --
+            <li><a href="#concacafcl">
+            <img alt="CONCACAF LEAGUE" class="competition concacaf" src="https://i.ibb.co/w0qg9JF/trans.png" alt=""></a>
+            </li>
+
+            <!-- END Competitions -->
+            </ul>  
+
+            </div>
+            </nav>
+        </div>
+   <!--//FILTER-->
+   
+   <!--TABLE-->
+   
+   <div class="uk-overflow-auto">
+   <table class="uk-table uk-table-small uk-table-divider">
+    <caption>@SlowDSports</caption>
+    <thead>
+        <tr class="center">
+            <th style="text-align:center;">Competici贸n</th>
+            <th style="text-align:center;">Evento</th>
+            <th style="text-align:center;">M贸vil | TV</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+       <!--LIGA-->
+        <tr id="cdr" class="uk-table table-liga center">
+            <td><img src="https://i.ibb.co/w0qg9JF/trans.png" alt="" class="competition laliga"></td>
+            <td> <b>La Liga Santander</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!--/LIGA-->
+                              
+       <!--MATCH-->
+        <tr class="center">
+            <td>
+                <p class="d6t9am">
+                Feb 27
+                </p>
+            </td>
+            <td>
+            
+            Sevilla
+            vs
+            Barcelona
+        
+            
+            <td><a href="//tv.slowdsports.com/es/laliga/1.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag es"></i></a></td>
+            
+            <td><a href="//tv.slowdsports.com/es/laliga/2.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag us"></i></a></td>
+            
+            <td><a href="//tv.slowdsports.com/es/laliga/3.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag es"></i></a></td>
+            
+            <td><a href="//www.popofthestream.com/embed/aliez-laliga.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag es"></i></a></td>    
+            
+        </tr>
+       <!--/MATCH-->
+       
+       <!--LIGA-->
+        <tr id="#premier" class="uk-table table-liga center">
+            <td><img src="https://i.ibb.co/w0qg9JF/trans.png" alt="" class="competition premier"></td>
+            <td> <b>Premier League</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!--/LIGA-->
+                              
+       <!--MATCH-->
+        <tr class="center">
+            <td>
+                <p class="d6t630am">
+                Feb 27
+                </p>
+            </td>
+            <td>
+            
+            Man City
+            vs
+            West Ham
+            
+            <td><a href="//tv.slowdsports.com/es/laliga/5.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag us"></i></a></td>
+            
+
+            
+        </tr>
+       <!--/MATCH-->
+       
+       <!--LIGA--
+        <tr id="premier" class="uk-table table-liga center">
+            <td><img src="https://i.ibb.co/w0qg9JF/trans.png" alt="" class="competition premier"></td>
+            <td> <b>Premier League</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!--/LIGA-->
+                              
+       <!--MATCH--
+        <tr class="center">
+            <td>
+                <p class="d6t630am">
+                Enero 16
+                </p>
+            </td>
+            <td>
+            
+            Wolves
+            vs
+            West Brom
+            
+            </td>
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+            
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+            
+        </tr>
+       <!--/MATCH-->
+       
+       <!--LIGA--
+        <tr id="seriea" class="uk-table table-liga center">
+            <td><img src="https://i.ibb.co/w0qg9JF/trans.png" alt="" class="competition seriea"></td>
+            <td> <b>Serie A</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!--/LIGA-->
+                              
+       <!--MATCH--
+        <tr class="center">
+            <td>
+                <p class="d6t630am">
+                Enero 16
+                </p>
+            </td>
+            <td>
+            
+            Wolves
+            vs
+            West Brom
+            
+            </td>
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+            
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+        </tr>
+       <!--/MATCH-->
+       
+       <!--LIGA--
+        <tr id="bundesliga" class="uk-table table-liga center">
+            <td><img src="https://i.ibb.co/w0qg9JF/trans.png" alt="" class="competition bundesliga"></td>
+            <td> <b>Bundesliga</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!--/LIGA-->
+                              
+       <!--MATCH--
+        <tr class="center">
+            <td>
+                <p class="d6t630am">
+                Enero 16
+                </p>
+            </td>
+            <td>
+            
+            Wolves
+            vs
+            West Brom
+            
+            </td>
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+            
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+        </tr>
+       <!--/MATCH-->
+       
+       <!--LIGA--
+        <tr id="ligue1" class="uk-table table-liga center">
+            <td><img src="https://i.ibb.co/w0qg9JF/trans.png" alt="" class="competition ligue1"></td>
+            <td> <b>Ligue 1</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!--/LIGA-->
+                              
+       <!--MATCH--
+        <tr class="center">
+            <td>
+                <p class="d6t630am">
+                Enero 16
+                </p>
+            </td>
+            <td>
+            
+            Wolves
+            vs
+            West Brom
+            
+            </td>
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+            
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+        </tr>
+       <!--/MATCH-->
+       
+       <!--LIGA--
+        <tr id="ligamx" class="uk-table table-liga center">
+            <td><img src="https://i.ibb.co/w0qg9JF/trans.png" alt="" class="competition ligamx"></td>
+            <td> <b>Liga MX</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       <!--/LIGA-->
+                              
+       <!--MATCH--
+        <tr class="center">
+            <td>
+                <p class="d6t630am">
+                Enero 16
+                </p>
+            </td>
+            <td>
+            
+            Wolves
+            vs
+            West Brom
+            
+            </td>
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+            
+            <td><a href="//tv.slowdsports.com/premier/bein.html" class="uk-button uk-button-large uk-button-default" type="button">
+            <i class="flag mx"></i></a></td>
+        </tr>
+       <!--/MATCH-->
+       
+
+    </tbody>
+</table>
+    </div>
+   <!--/TABLE-->
+    </div>
+   <!--/GRID LEFT-->
+    <!--GRID RIGHT-->
+    <div class="uk-width-1-4@m">
+      
+       <!--BANNER-->
+          <div class="sidebar-vip"></div>
+       <!--/BANNER-->
+       
+       <!--BANNER-->
+          <div class="sidebar-ads1"></div>
+       <!--/BANNER-->
+       
+       <!--FEATURED-->
+          <div class="sidebar-featured"></div>
+       <!--/FEATURED-->
+       
+       <!--POST-->
+          <div class="sidebar-post"></div>
+       <!--/POST-->
+       
+       <!--STANDINGS-->
+          <h6>Posiciones</h6>
+          <hr>
+           <iframe width="100%" height="720" scrolling="no" src="//slowdsports.com/baseball/table.php" frameborder="0"></iframe>
+       <!--/STANDINGS-->
+        
+    </div>
+    <!--/GRID RIGHT-->
+    </div>
+    <!--/GRID-->
+    </div>
+    <!--/CONTAINER-->   
+       
+
+   <!--/TABLE-->
+
+   <!--FOOTER-->
+   <div class="footer"></div>
+    <!--/FOOTER-->
+    
+    <!-- OFFCANVAS -->
+		<div class="offcanvas"></div>
+		<!-- /OFFCANVAS -->
+    
+    <!--SCRIPTS-->
+       <script src="//eduveel19.github.io/assets/js/main.js"></script>
+       <script src="//eduveel19.github.io/assets/js/sidebar.js"></script>
+       <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>        
+    <!--/SCRIPTS-->
+    </body>
+</html>
