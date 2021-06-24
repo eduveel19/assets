@@ -7,7 +7,7 @@ function d6t12am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  07, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26, 07, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -34,11 +34,11 @@ function d6t12am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t12am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t12am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -46,55 +46,6 @@ function d6t12am() {
 }
 
 d6t12am()
-
-function d6t1215am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              12:15 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(2021, 06, 26,  07, 15, 00));
-
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d6t1215am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
-    if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d6t1215am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
-      }
-      if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d6t1215am")) {
-          allEllements.innerHTML = "Ended";
-        }
-      }
-    }
-  }, 1000);
-}
-
-d6t1215am()
 
 function d6t1230am() {
   // Set the date we're counting down to
@@ -105,7 +56,7 @@ function d6t1230am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  07, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26, 07, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -132,11 +83,11 @@ function d6t1230am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1230am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1230am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -154,7 +105,7 @@ function d6t1am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  08, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26, 08, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -181,11 +132,11 @@ function d6t1am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -203,7 +154,7 @@ function d6t130am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  08, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26,  08, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -230,11 +181,11 @@ function d6t130am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t130am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t130am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -252,7 +203,7 @@ function d6t2am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  09, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26,  09, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -279,11 +230,11 @@ function d6t2am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t2am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t2am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -301,7 +252,7 @@ function d6t230am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  09, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26,  09, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -328,11 +279,11 @@ function d6t230am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t230am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t230am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -350,7 +301,7 @@ function d6t3am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  10, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26, 10, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -377,11 +328,11 @@ function d6t3am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t3am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t3am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -399,7 +350,7 @@ function d6t330am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  10, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26,  10, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -426,11 +377,11 @@ function d6t330am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t330am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t330am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -448,7 +399,7 @@ function d6t4am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  11, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26,  11, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -475,11 +426,11 @@ function d6t4am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t4am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t4am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -497,7 +448,7 @@ function d6t430am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  11, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26,  11, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -524,11 +475,11 @@ function d6t430am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t430am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t430am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -546,7 +497,7 @@ function d6t5am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 26,  12, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 26,  12, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -573,11 +524,11 @@ function d6t5am() {
     // If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t5am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t5am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -595,7 +546,7 @@ function d6t530am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 12,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 12,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -622,11 +573,11 @@ function d6t530am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t530am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t530am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -644,7 +595,7 @@ function d6t6am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 13,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 13,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -671,11 +622,11 @@ function d6t6am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t6am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t6am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -693,7 +644,7 @@ function d6t630am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 13,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 13,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -720,11 +671,11 @@ function d6t630am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t630am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t630am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -742,7 +693,7 @@ function d6t7am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 14,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 14,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -769,11 +720,11 @@ function d6t7am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t7am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t7am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -791,7 +742,7 @@ function d6t730am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 14,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 14,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -818,11 +769,11 @@ function d6t730am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t730am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t730am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -840,7 +791,7 @@ function d6t8am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 15,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 15,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -867,11 +818,11 @@ function d6t8am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t8am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t8am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -889,7 +840,7 @@ function d6t830am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 15,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 15,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -916,11 +867,11 @@ function d6t830am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t830am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t830am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -938,7 +889,7 @@ function d6t9am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 16,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 16,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -965,11 +916,11 @@ function d6t9am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t9am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t9am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -987,7 +938,7 @@ function d6t930am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 16,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 16,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1014,11 +965,11 @@ function d6t930am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t930am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t930am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1036,7 +987,7 @@ function d6t10am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 17,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 17,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1063,11 +1014,11 @@ function d6t10am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t10am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t10am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1085,7 +1036,7 @@ function d6t1030am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 17,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 17,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1112,11 +1063,11 @@ function d6t1030am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1030am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1030am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1134,7 +1085,7 @@ function d6t11am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 18,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 18,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1161,11 +1112,11 @@ function d6t11am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t11am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t11am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1183,7 +1134,7 @@ function d6t1130am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 18,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 18,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1210,11 +1161,11 @@ function d6t1130am() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1130am")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1130am")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1232,7 +1183,7 @@ function d6t12pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 19,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 19,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1259,11 +1210,11 @@ function d6t12pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t12pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t12pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1281,7 +1232,7 @@ function d6t1230pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 19,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 19,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1308,11 +1259,11 @@ function d6t1230pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1230pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1230pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1330,7 +1281,7 @@ function d6t1pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 20,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 20,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1357,11 +1308,11 @@ function d6t1pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1379,7 +1330,7 @@ function d6t130pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 20,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 20,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1406,11 +1357,11 @@ function d6t130pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t130pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t130pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1428,7 +1379,7 @@ function d6t2pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 21,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 21,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1455,11 +1406,11 @@ function d6t2pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t2pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t2pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1477,7 +1428,7 @@ function d6t230pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 21,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 21,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1504,11 +1455,11 @@ function d6t230pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t230pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t230pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1526,7 +1477,7 @@ function d6t3pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 22,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 22,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1553,11 +1504,11 @@ function d6t3pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t3pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t3pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1575,7 +1526,7 @@ function d6t330pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 22,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 22,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1602,11 +1553,11 @@ function d6t330pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t330pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t330pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1624,7 +1575,7 @@ function d6t4pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 23,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 23,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1651,11 +1602,11 @@ function d6t4pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t4pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t4pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1673,7 +1624,7 @@ function d6t430pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 23,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 26, 23,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1700,11 +1651,11 @@ function d6t430pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t430pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t430pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1722,7 +1673,7 @@ function d6t5pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 00,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 00,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1749,11 +1700,11 @@ function d6t5pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t5pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t5pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1771,7 +1722,7 @@ function d6t530pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 00,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 00,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1798,11 +1749,11 @@ function d6t530pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t530pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t530pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1820,7 +1771,7 @@ function d6t6pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 01,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 01,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1847,11 +1798,11 @@ function d6t6pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t6pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t6pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1869,7 +1820,7 @@ function d6t630pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 01,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 01,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1896,11 +1847,11 @@ function d6t630pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t630pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t630pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1918,7 +1869,7 @@ function d6t7pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 02,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 02,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1945,11 +1896,11 @@ function d6t7pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t7pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t7pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -1967,7 +1918,7 @@ function d6t730pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 02,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 02,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1994,11 +1945,11 @@ function d6t730pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t730pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t730pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2016,7 +1967,7 @@ function d6t8pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 03,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 03,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2043,11 +1994,11 @@ function d6t8pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t8pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t8pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2065,7 +2016,7 @@ function d6t830pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 03,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 03,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2092,11 +2043,11 @@ function d6t830pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t830pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t830pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2114,7 +2065,7 @@ function d6t9pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 04,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 04,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2141,11 +2092,11 @@ function d6t9pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t9pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t9pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2163,7 +2114,7 @@ function d6t930pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 04,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 04,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2190,11 +2141,11 @@ function d6t930pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t930pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t930pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2212,7 +2163,7 @@ function d6t10pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 05,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 05,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2239,11 +2190,11 @@ function d6t10pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t10pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t10pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2261,7 +2212,7 @@ function d6t1030pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 05,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 05,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2288,11 +2239,11 @@ function d6t1030pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1030pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1030pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2310,7 +2261,7 @@ function d6t11pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 04,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 04,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2337,11 +2288,11 @@ function d6t11pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t11pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t11pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
@@ -2359,7 +2310,7 @@ function d6t1130pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 26, 04,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 27, 04,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2386,11 +2337,11 @@ function d6t1130pm() {
 		// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d6t1130pm")) {
-        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d6t1130pm")) {
-          allEllements.innerHTML = "Ended";
+          allEllements.innerHTML = "Finalizó";
         }
       }
     }
