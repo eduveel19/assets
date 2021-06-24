@@ -7,7 +7,7 @@ function d6t12am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  07, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  07, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -47,6 +47,55 @@ function d6t12am() {
 
 d6t12am()
 
+function d6t1215am() {
+  // Set the date we're counting down to
+  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  //::::::::::::                                       ::::::::::::
+  //::::::::::::              12:15 AM                  ::::::::::::
+  //::::::::::::                                       ::::::::::::
+  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  //                                   (AAAA, MM, DD, HH, mm, S ));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  07, 15, 00));
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+    var distance = countDownDate - now - (3600000 * 1);
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    for (const ele of document.getElementsByClassName("d6t1215am")) {
+      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
+        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+    }
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      for (const ele of document.getElementsByClassName("d6t1215am")) {
+        ele.innerHTML = "<p class='live-text'>Live <i class='fa fa-circle faa-flash animated'></i></p> ";
+      }
+      if (distance + 7200000 < 0) {
+        for (const allEllements of document.getElementsByClassName("d6t1215am")) {
+          allEllements.innerHTML = "Ended";
+        }
+      }
+    }
+  }, 1000);
+}
+
+d6t1215am()
+
 function d6t1230am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
@@ -56,7 +105,7 @@ function d6t1230am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  07, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  07, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -105,7 +154,7 @@ function d6t1am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  08, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  08, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -154,7 +203,7 @@ function d6t130am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  08, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  08, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -203,7 +252,7 @@ function d6t2am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  09, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  09, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -252,7 +301,7 @@ function d6t230am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  09, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  09, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -301,7 +350,7 @@ function d6t3am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  10, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  10, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -350,7 +399,7 @@ function d6t330am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  10, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  10, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -399,7 +448,7 @@ function d6t4am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  11, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  11, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -448,7 +497,7 @@ function d6t430am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  11, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  11, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -497,7 +546,7 @@ function d6t5am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 00, 23,  12, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 05, 25,  12, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -546,7 +595,7 @@ function d6t530am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 12,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 12,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -595,7 +644,7 @@ function d6t6am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 13,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 13,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -644,7 +693,7 @@ function d6t630am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 13,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 13,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -693,7 +742,7 @@ function d6t7am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 14,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 14,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -742,7 +791,7 @@ function d6t730am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 14,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 14,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -791,7 +840,7 @@ function d6t8am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 15,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 15,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -840,7 +889,7 @@ function d6t830am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 15,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 15,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -889,7 +938,7 @@ function d6t9am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 16,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 16,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -938,7 +987,7 @@ function d6t930am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 16,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 16,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -987,7 +1036,7 @@ function d6t10am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 17,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 17,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1036,7 +1085,7 @@ function d6t1030am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 17,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 17,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1085,7 +1134,7 @@ function d6t11am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 18,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 18,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1134,7 +1183,7 @@ function d6t1130am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 18,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 18,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1183,7 +1232,7 @@ function d6t12pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 19,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 19,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1232,7 +1281,7 @@ function d6t1230pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 19,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 19,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1281,7 +1330,7 @@ function d6t1pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 20,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 20,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1330,7 +1379,7 @@ function d6t130pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 20,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 20,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1379,7 +1428,7 @@ function d6t2pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 21,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 21,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1428,7 +1477,7 @@ function d6t230pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 21,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 21,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1477,7 +1526,7 @@ function d6t3pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 22,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 22,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1526,7 +1575,7 @@ function d6t330pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 22,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 22,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1575,7 +1624,7 @@ function d6t4pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 23,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 23,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1624,7 +1673,7 @@ function d6t430pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 23, 23,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 05, 25, 23,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1673,7 +1722,7 @@ function d6t5pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 00,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 00,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1722,7 +1771,7 @@ function d6t530pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 00,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 00,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1771,7 +1820,7 @@ function d6t6pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 01,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 01,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1820,7 +1869,7 @@ function d6t630pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 01,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 01,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1869,7 +1918,7 @@ function d6t7pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 02,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 02,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1918,7 +1967,7 @@ function d6t730pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 02,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 02,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1967,7 +2016,7 @@ function d6t8pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 03,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 03,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2016,7 +2065,7 @@ function d6t830pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 03,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 03,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2065,7 +2114,7 @@ function d6t9pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 04,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 04,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2114,7 +2163,7 @@ function d6t930pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 04,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 04,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2163,7 +2212,7 @@ function d6t10pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 05,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 05,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2212,7 +2261,7 @@ function d6t1030pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 05,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 05,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2261,7 +2310,7 @@ function d6t11pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 04,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 04,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2310,7 +2359,7 @@ function d6t1130pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 00, 24, 04,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 00, 26, 04,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
