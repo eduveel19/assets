@@ -1,0 +1,8 @@
+1-12
+12 meses tiene 1 año
+
+  // 1-4 carpetas x mes
+  4 semanas tiene un mes
+  
+    // timer1-timer7.js
+    7 días tiene una semana
