@@ -1,4 +1,4 @@
-function d7t12am() {
+function d6t12am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -7,7 +7,7 @@ function d7t12am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 07, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 07, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -26,18 +26,18 @@ function d7t12am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t12am")) {
+    for (const ele of document.getElementsByClassName("d6t12am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t12am")) {
+      for (const ele of document.getElementsByClassName("d6t12am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t12am")) {
+        for (const allEllements of document.getElementsByClassName("d6t12am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -45,9 +45,9 @@ function d7t12am() {
   }, 1000);
 }
 
-d7t12am()
+d6t12am()
 
-function d7t1230am() {
+function d6t1230am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -56,7 +56,7 @@ function d7t1230am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 07, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 07, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -75,18 +75,18 @@ function d7t1230am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t1230am")) {
+    for (const ele of document.getElementsByClassName("d6t1230am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1230am")) {
+      for (const ele of document.getElementsByClassName("d6t1230am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1230am")) {
+        for (const allEllements of document.getElementsByClassName("d6t1230am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -94,9 +94,9 @@ function d7t1230am() {
   }, 1000);
 }
 
-d7t1230am()
+d6t1230am()
 
-function d7t1am() {
+function d6t1am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -105,7 +105,7 @@ function d7t1am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 08, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 08, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -124,18 +124,18 @@ function d7t1am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t1am")) {
+    for (const ele of document.getElementsByClassName("d6t1am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1am")) {
+      for (const ele of document.getElementsByClassName("d6t1am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1am")) {
+        for (const allEllements of document.getElementsByClassName("d6t1am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -143,9 +143,9 @@ function d7t1am() {
   }, 1000);
 }
 
-d7t1am()
+d6t1am()
 
-function d7t130am() {
+function d6t130am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -154,7 +154,7 @@ function d7t130am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 08, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 08, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -173,18 +173,18 @@ function d7t130am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t130am")) {
+    for (const ele of document.getElementsByClassName("d6t130am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t130am")) {
+      for (const ele of document.getElementsByClassName("d6t130am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t130am")) {
+        for (const allEllements of document.getElementsByClassName("d6t130am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -192,9 +192,9 @@ function d7t130am() {
   }, 1000);
 }
 
-d7t130am()
+d6t130am()
 
-function d7t2am() {
+function d6t2am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -203,7 +203,7 @@ function d7t2am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 09, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 09, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -222,18 +222,18 @@ function d7t2am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t2am")) {
+    for (const ele of document.getElementsByClassName("d6t2am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t2am")) {
+      for (const ele of document.getElementsByClassName("d6t2am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t2am")) {
+        for (const allEllements of document.getElementsByClassName("d6t2am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -241,9 +241,9 @@ function d7t2am() {
   }, 1000);
 }
 
-d7t2am()
+d6t2am()
 
-function d7t230am() {
+function d6t230am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -252,7 +252,7 @@ function d7t230am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03,  09, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10,  09, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -271,18 +271,18 @@ function d7t230am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t230am")) {
+    for (const ele of document.getElementsByClassName("d6t230am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t230am")) {
+      for (const ele of document.getElementsByClassName("d6t230am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t230am")) {
+        for (const allEllements of document.getElementsByClassName("d6t230am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -290,9 +290,9 @@ function d7t230am() {
   }, 1000);
 }
 
-d7t230am()
+d6t230am()
 
-function d7t3am() {
+function d6t3am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -301,7 +301,7 @@ function d7t3am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 10, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 10, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -320,18 +320,18 @@ function d7t3am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t3am")) {
+    for (const ele of document.getElementsByClassName("d6t3am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t3am")) {
+      for (const ele of document.getElementsByClassName("d6t3am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t3am")) {
+        for (const allEllements of document.getElementsByClassName("d6t3am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -339,9 +339,9 @@ function d7t3am() {
   }, 1000);
 }
 
-d7t3am()
+d6t3am()
 
-function d7t330am() {
+function d6t330am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -350,7 +350,7 @@ function d7t330am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 10, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 10, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -369,18 +369,18 @@ function d7t330am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t330am")) {
+    for (const ele of document.getElementsByClassName("d6t330am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t330am")) {
+      for (const ele of document.getElementsByClassName("d6t330am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t330am")) {
+        for (const allEllements of document.getElementsByClassName("d6t330am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -388,9 +388,9 @@ function d7t330am() {
   }, 1000);
 }
 
-d7t330am()
+d6t330am()
 
-function d7t4am() {
+function d6t4am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -399,7 +399,7 @@ function d7t4am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 11, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 11, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -418,18 +418,18 @@ function d7t4am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t4am")) {
+    for (const ele of document.getElementsByClassName("d6t4am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t4am")) {
+      for (const ele of document.getElementsByClassName("d6t4am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t4am")) {
+        for (const allEllements of document.getElementsByClassName("d6t4am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -437,9 +437,9 @@ function d7t4am() {
   }, 1000);
 }
 
-d7t4am()
+d6t4am()
 
-function d7t430am() {
+function d6t430am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -448,7 +448,7 @@ function d7t430am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 11, 30, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 11, 30, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -467,18 +467,18 @@ function d7t430am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t430am")) {
+    for (const ele of document.getElementsByClassName("d6t430am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t430am")) {
+      for (const ele of document.getElementsByClassName("d6t430am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t430am")) {
+        for (const allEllements of document.getElementsByClassName("d6t430am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -486,9 +486,9 @@ function d7t430am() {
   }, 1000);
 }
 
-d7t430am()
+d6t430am()
 
-function d7t5am() {
+function d6t5am() {
   // Set the date we're counting down to
   // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -497,7 +497,7 @@ function d7t5am() {
   //::::::::::::                                       ::::::::::::
   //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 03, 12, 00, 00));
+  var countDownDate = new Date(Date.UTC(2021, 06, 10, 12, 00, 00));
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -516,18 +516,18 @@ function d7t5am() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d7t5am")) {
+    for (const ele of document.getElementsByClassName("d6t5am")) {
       ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
         minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
     }
 
     // If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t5am")) {
+      for (const ele of document.getElementsByClassName("d6t5am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t5am")) {
+        for (const allEllements of document.getElementsByClassName("d6t5am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -535,9 +535,9 @@ function d7t5am() {
   }, 1000);
 }
 
-d7t5am()
+d6t5am()
 
-function d7t530am() {
+function d6t530am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -546,7 +546,7 @@ function d7t530am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 12,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 12,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -565,18 +565,18 @@ function d7t530am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t530am")){
+		for (const ele of document.getElementsByClassName("d6t530am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t530am")) {
+      for (const ele of document.getElementsByClassName("d6t530am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t530am")) {
+        for (const allEllements of document.getElementsByClassName("d6t530am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -584,9 +584,9 @@ function d7t530am() {
   }, 1000);
 }
 
-d7t530am()
+d6t530am()
 
-function d7t6am() {
+function d6t6am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -595,7 +595,7 @@ function d7t6am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 13,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 13,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -614,18 +614,18 @@ function d7t6am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t6am")){
+		for (const ele of document.getElementsByClassName("d6t6am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t6am")) {
+      for (const ele of document.getElementsByClassName("d6t6am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t6am")) {
+        for (const allEllements of document.getElementsByClassName("d6t6am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -633,9 +633,9 @@ function d7t6am() {
   }, 1000);
 }
 
-d7t6am()
+d6t6am()
 
-function d7t630am() {
+function d6t630am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -644,7 +644,7 @@ function d7t630am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 13,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 13,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -663,18 +663,18 @@ function d7t630am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t630am")){
+		for (const ele of document.getElementsByClassName("d6t630am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t630am")) {
+      for (const ele of document.getElementsByClassName("d6t630am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t630am")) {
+        for (const allEllements of document.getElementsByClassName("d6t630am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -682,9 +682,9 @@ function d7t630am() {
   }, 1000);
 }
 
-d7t630am()
+d6t630am()
 
-function d7t7am() {
+function d6t7am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -693,7 +693,7 @@ function d7t7am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 14,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 14,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -712,18 +712,18 @@ function d7t7am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t7am")){
+		for (const ele of document.getElementsByClassName("d6t7am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t7am")) {
+      for (const ele of document.getElementsByClassName("d6t7am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t7am")) {
+        for (const allEllements of document.getElementsByClassName("d6t7am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -731,9 +731,9 @@ function d7t7am() {
   }, 1000);
 }
 
-d7t7am()
+d6t7am()
 
-function d7t730am() {
+function d6t730am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -742,7 +742,7 @@ function d7t730am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 14,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 14,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -761,18 +761,18 @@ function d7t730am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t730am")){
+		for (const ele of document.getElementsByClassName("d6t730am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t730am")) {
+      for (const ele of document.getElementsByClassName("d6t730am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t730am")) {
+        for (const allEllements of document.getElementsByClassName("d6t730am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -780,9 +780,9 @@ function d7t730am() {
   }, 1000);
 }
 
-d7t730am()
+d6t730am()
 
-function d7t8am() {
+function d6t8am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -791,7 +791,7 @@ function d7t8am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 15,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 15,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -810,18 +810,18 @@ function d7t8am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t8am")){
+		for (const ele of document.getElementsByClassName("d6t8am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t8am")) {
+      for (const ele of document.getElementsByClassName("d6t8am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t8am")) {
+        for (const allEllements of document.getElementsByClassName("d6t8am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -829,9 +829,9 @@ function d7t8am() {
   }, 1000);
 }
 
-d7t8am()
+d6t8am()
 
-function d7t830am() {
+function d6t830am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -840,7 +840,7 @@ function d7t830am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 15,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 15,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -859,18 +859,18 @@ function d7t830am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t830am")){
+		for (const ele of document.getElementsByClassName("d6t830am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t830am")) {
+      for (const ele of document.getElementsByClassName("d6t830am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t830am")) {
+        for (const allEllements of document.getElementsByClassName("d6t830am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -878,9 +878,9 @@ function d7t830am() {
   }, 1000);
 }
 
-d7t830am()
+d6t830am()
 
-function d7t9am() {
+function d6t9am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -889,7 +889,7 @@ function d7t9am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 16,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 16,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -908,18 +908,18 @@ function d7t9am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t9am")){
+		for (const ele of document.getElementsByClassName("d6t9am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t9am")) {
+      for (const ele of document.getElementsByClassName("d6t9am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t9am")) {
+        for (const allEllements of document.getElementsByClassName("d6t9am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -927,9 +927,9 @@ function d7t9am() {
   }, 1000);
 }
 
-d7t9am()
+d6t9am()
 
-function d7t930am() {
+function d6t930am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -938,7 +938,7 @@ function d7t930am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 16,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 16,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -957,18 +957,18 @@ function d7t930am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t930am")){
+		for (const ele of document.getElementsByClassName("d6t930am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t930am")) {
+      for (const ele of document.getElementsByClassName("d6t930am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t930am")) {
+        for (const allEllements of document.getElementsByClassName("d6t930am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -976,9 +976,9 @@ function d7t930am() {
   }, 1000);
 }
 
-d7t930am()
+d6t930am()
 
-function d7t10am() {
+function d6t10am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -987,7 +987,7 @@ function d7t10am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 17,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 17,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1006,18 +1006,18 @@ function d7t10am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t10am")){
+		for (const ele of document.getElementsByClassName("d6t10am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t10am")) {
+      for (const ele of document.getElementsByClassName("d6t10am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t10am")) {
+        for (const allEllements of document.getElementsByClassName("d6t10am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1025,9 +1025,9 @@ function d7t10am() {
   }, 1000);
 }
 
-d7t10am()
+d6t10am()
 
-function d7t1030am() {
+function d6t1030am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1036,7 +1036,7 @@ function d7t1030am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 17,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 17,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1055,18 +1055,18 @@ function d7t1030am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t1030am")){
+		for (const ele of document.getElementsByClassName("d6t1030am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1030am")) {
+      for (const ele of document.getElementsByClassName("d6t1030am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1030am")) {
+        for (const allEllements of document.getElementsByClassName("d6t1030am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1074,9 +1074,9 @@ function d7t1030am() {
   }, 1000);
 }
 
-d7t1030am()
+d6t1030am()
 
-function d7t11am() {
+function d6t11am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1085,7 +1085,7 @@ function d7t11am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 18,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 18,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1104,18 +1104,18 @@ function d7t11am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t11am")){
+		for (const ele of document.getElementsByClassName("d6t11am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t11am")) {
+      for (const ele of document.getElementsByClassName("d6t11am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t11am")) {
+        for (const allEllements of document.getElementsByClassName("d6t11am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1123,9 +1123,9 @@ function d7t11am() {
   }, 1000);
 }
 
-d7t11am()
+d6t11am()
 
-function d7t1130am() {
+function d6t1130am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1134,7 +1134,7 @@ function d7t1130am() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 18,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 18,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1153,18 +1153,18 @@ function d7t1130am() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t1130am")){
+		for (const ele of document.getElementsByClassName("d6t1130am")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1130am")) {
+      for (const ele of document.getElementsByClassName("d6t1130am")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1130am")) {
+        for (const allEllements of document.getElementsByClassName("d6t1130am")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1172,9 +1172,9 @@ function d7t1130am() {
   }, 1000);
 }
 
-d7t1130am()
+d6t1130am()
 
-function d7t12pm() {
+function d6t12pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1183,7 +1183,7 @@ function d7t12pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 19,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 19,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1202,18 +1202,18 @@ function d7t12pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t12pm")){
+		for (const ele of document.getElementsByClassName("d6t12pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t12pm")) {
+      for (const ele of document.getElementsByClassName("d6t12pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t12pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t12pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1221,9 +1221,9 @@ function d7t12pm() {
   }, 1000);
 }
 
-d7t12pm()
+d6t12pm()
 
-function d7t1230pm() {
+function d6t1230pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1232,7 +1232,7 @@ function d7t1230pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 19,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 19,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1251,18 +1251,18 @@ function d7t1230pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t1230pm")){
+		for (const ele of document.getElementsByClassName("d6t1230pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1230pm")) {
+      for (const ele of document.getElementsByClassName("d6t1230pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1230pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t1230pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1270,9 +1270,9 @@ function d7t1230pm() {
   }, 1000);
 }
 
-d7t1230pm()
+d6t1230pm()
 
-function d7t1pm() {
+function d6t1pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1281,7 +1281,7 @@ function d7t1pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 20,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 20,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1300,18 +1300,18 @@ function d7t1pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t1pm")){
+		for (const ele of document.getElementsByClassName("d6t1pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1pm")) {
+      for (const ele of document.getElementsByClassName("d6t1pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t1pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1319,9 +1319,9 @@ function d7t1pm() {
   }, 1000);
 }
 
-d7t1pm()
+d6t1pm()
 
-function d7t130pm() {
+function d6t130pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1330,7 +1330,7 @@ function d7t130pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 20,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 20,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1349,18 +1349,18 @@ function d7t130pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t130pm")){
+		for (const ele of document.getElementsByClassName("d6t130pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t130pm")) {
+      for (const ele of document.getElementsByClassName("d6t130pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t130pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t130pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1368,9 +1368,9 @@ function d7t130pm() {
   }, 1000);
 }
 
-d7t130pm()
+d6t130pm()
 
-function d7t2pm() {
+function d6t2pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1379,7 +1379,7 @@ function d7t2pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 21,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 21,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1398,18 +1398,18 @@ function d7t2pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t2pm")){
+		for (const ele of document.getElementsByClassName("d6t2pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t2pm")) {
+      for (const ele of document.getElementsByClassName("d6t2pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t2pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t2pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1417,9 +1417,9 @@ function d7t2pm() {
   }, 1000);
 }
 
-d7t2pm()
+d6t2pm()
 
-function d7t230pm() {
+function d6t230pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1428,7 +1428,7 @@ function d7t230pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 21,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 21,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1447,18 +1447,18 @@ function d7t230pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t230pm")){
+		for (const ele of document.getElementsByClassName("d6t230pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t230pm")) {
+      for (const ele of document.getElementsByClassName("d6t230pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t230pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t230pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1466,9 +1466,9 @@ function d7t230pm() {
   }, 1000);
 }
 
-d7t230pm()
+d6t230pm()
 
-function d7t3pm() {
+function d6t3pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1477,7 +1477,7 @@ function d7t3pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 22,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 22,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1496,18 +1496,18 @@ function d7t3pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t3pm")){
+		for (const ele of document.getElementsByClassName("d6t3pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t3pm")) {
+      for (const ele of document.getElementsByClassName("d6t3pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t3pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t3pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1515,9 +1515,9 @@ function d7t3pm() {
   }, 1000);
 }
 
-d7t3pm()
+d6t3pm()
 
-function d7t330pm() {
+function d6t330pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1526,7 +1526,7 @@ function d7t330pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 22,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 22,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1545,18 +1545,18 @@ function d7t330pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t330pm")){
+		for (const ele of document.getElementsByClassName("d6t330pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t330pm")) {
+      for (const ele of document.getElementsByClassName("d6t330pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t330pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t330pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1564,9 +1564,9 @@ function d7t330pm() {
   }, 1000);
 }
 
-d7t330pm()
+d6t330pm()
 
-function d7t4pm() {
+function d6t4pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1575,7 +1575,7 @@ function d7t4pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 23,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 23,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1594,18 +1594,18 @@ function d7t4pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t4pm")){
+		for (const ele of document.getElementsByClassName("d6t4pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t4pm")) {
+      for (const ele of document.getElementsByClassName("d6t4pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t4pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t4pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1613,9 +1613,9 @@ function d7t4pm() {
   }, 1000);
 }
 
-d7t4pm()
+d6t4pm()
 
-function d7t430pm() {
+function d6t430pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1624,7 +1624,7 @@ function d7t430pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 03, 23,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 10, 23,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1643,18 +1643,18 @@ function d7t430pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t430pm")){
+		for (const ele of document.getElementsByClassName("d6t430pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t430pm")) {
+      for (const ele of document.getElementsByClassName("d6t430pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t430pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t430pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1662,9 +1662,9 @@ function d7t430pm() {
   }, 1000);
 }
 
-d7t430pm()
+d6t430pm()
 
-function d7t5pm() {
+function d6t5pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1673,7 +1673,7 @@ function d7t5pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 00,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 00,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1692,18 +1692,18 @@ function d7t5pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t5pm")){
+		for (const ele of document.getElementsByClassName("d6t5pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t5pm")) {
+      for (const ele of document.getElementsByClassName("d6t5pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t5pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t5pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1711,9 +1711,9 @@ function d7t5pm() {
   }, 1000);
 }
 
-d7t5pm()
+d6t5pm()
 
-function d7t530pm() {
+function d6t530pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1722,7 +1722,7 @@ function d7t530pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 00,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 00,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1741,18 +1741,18 @@ function d7t530pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t530pm")){
+		for (const ele of document.getElementsByClassName("d6t530pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t530pm")) {
+      for (const ele of document.getElementsByClassName("d6t530pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t530pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t530pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1760,9 +1760,9 @@ function d7t530pm() {
   }, 1000);
 }
 
-d7t530pm()
+d6t530pm()
 
-function d7t6pm() {
+function d6t6pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1771,7 +1771,7 @@ function d7t6pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 01,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 01,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1790,18 +1790,18 @@ function d7t6pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t6pm")){
+		for (const ele of document.getElementsByClassName("d6t6pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t6pm")) {
+      for (const ele of document.getElementsByClassName("d6t6pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t6pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t6pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1809,9 +1809,9 @@ function d7t6pm() {
   }, 1000);
 }
 
-d7t6pm()
+d6t6pm()
 
-function d7t630pm() {
+function d6t630pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1820,7 +1820,7 @@ function d7t630pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 01,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 01,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1839,18 +1839,18 @@ function d7t630pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t630pm")){
+		for (const ele of document.getElementsByClassName("d6t630pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t630pm")) {
+      for (const ele of document.getElementsByClassName("d6t630pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t630pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t630pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1858,9 +1858,9 @@ function d7t630pm() {
   }, 1000);
 }
 
-d7t630pm()
+d6t630pm()
 
-function d7t7pm() {
+function d6t7pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1869,7 +1869,7 @@ function d7t7pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 02,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 02,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1888,18 +1888,18 @@ function d7t7pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t7pm")){
+		for (const ele of document.getElementsByClassName("d6t7pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t7pm")) {
+      for (const ele of document.getElementsByClassName("d6t7pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t7pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t7pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1907,9 +1907,9 @@ function d7t7pm() {
   }, 1000);
 }
 
-d7t7pm()
+d6t7pm()
 
-function d7t730pm() {
+function d6t730pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1918,7 +1918,7 @@ function d7t730pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 02,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 02,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1937,18 +1937,18 @@ function d7t730pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t730pm")){
+		for (const ele of document.getElementsByClassName("d6t730pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t730pm")) {
+      for (const ele of document.getElementsByClassName("d6t730pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t730pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t730pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -1956,9 +1956,9 @@ function d7t730pm() {
   }, 1000);
 }
 
-d7t730pm()
+d6t730pm()
 
-function d7t8pm() {
+function d6t8pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1967,7 +1967,7 @@ function d7t8pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 03,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 03,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -1986,18 +1986,18 @@ function d7t8pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t8pm")){
+		for (const ele of document.getElementsByClassName("d6t8pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t8pm")) {
+      for (const ele of document.getElementsByClassName("d6t8pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t8pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t8pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2005,9 +2005,9 @@ function d7t8pm() {
   }, 1000);
 }
 
-d7t8pm()
+d6t8pm()
 
-function d7t830pm() {
+function d6t830pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2016,7 +2016,7 @@ function d7t830pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 03,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 03,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2035,18 +2035,18 @@ function d7t830pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t830pm")){
+		for (const ele of document.getElementsByClassName("d6t830pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t830pm")) {
+      for (const ele of document.getElementsByClassName("d6t830pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t830pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t830pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2054,9 +2054,9 @@ function d7t830pm() {
   }, 1000);
 }
 
-d7t830pm()
+d6t830pm()
 
-function d7t9pm() {
+function d6t9pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2065,7 +2065,7 @@ function d7t9pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 04,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 04,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2084,18 +2084,18 @@ function d7t9pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t9pm")){
+		for (const ele of document.getElementsByClassName("d6t9pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t9pm")) {
+      for (const ele of document.getElementsByClassName("d6t9pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t9pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t9pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2103,9 +2103,9 @@ function d7t9pm() {
   }, 1000);
 }
 
-d7t9pm()
+d6t9pm()
 
-function d7t930pm() {
+function d6t930pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2114,7 +2114,7 @@ function d7t930pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 04,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 04,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2133,18 +2133,18 @@ function d7t930pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t930pm")){
+		for (const ele of document.getElementsByClassName("d6t930pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t930pm")) {
+      for (const ele of document.getElementsByClassName("d6t930pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t930pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t930pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2152,9 +2152,9 @@ function d7t930pm() {
   }, 1000);
 }
 
-d7t930pm()
+d6t930pm()
 
-function d7t10pm() {
+function d6t10pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2163,7 +2163,7 @@ function d7t10pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 05,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 05,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2182,18 +2182,18 @@ function d7t10pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t10pm")){
+		for (const ele of document.getElementsByClassName("d6t10pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t10pm")) {
+      for (const ele of document.getElementsByClassName("d6t10pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t10pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t10pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2201,9 +2201,9 @@ function d7t10pm() {
   }, 1000);
 }
 
-d7t10pm()
+d6t10pm()
 
-function d7t1030pm() {
+function d6t1030pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2212,7 +2212,7 @@ function d7t1030pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 05,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 05,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2231,18 +2231,18 @@ function d7t1030pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t1030pm")){
+		for (const ele of document.getElementsByClassName("d6t1030pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1030pm")) {
+      for (const ele of document.getElementsByClassName("d6t1030pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1030pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t1030pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2250,9 +2250,9 @@ function d7t1030pm() {
   }, 1000);
 }
 
-d7t1030pm()
+d6t1030pm()
 
-function d7t11pm() {
+function d6t11pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2261,7 +2261,7 @@ function d7t11pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 04,00,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 04,00,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2280,18 +2280,18 @@ function d7t11pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t11pm")){
+		for (const ele of document.getElementsByClassName("d6t11pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t11pm")) {
+      for (const ele of document.getElementsByClassName("d6t11pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t11pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t11pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2299,9 +2299,9 @@ function d7t11pm() {
   }, 1000);
 }
 
-d7t11pm()
+d6t11pm()
 
-function d7t1130pm() {
+function d6t1130pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2310,7 +2310,7 @@ function d7t1130pm() {
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 04, 04,30,00));
+	var countDownDate = new Date(Date.UTC(2021, 06, 11, 04,30,00));
 
 // Update the count down every 1 second
 	var x = setInterval(function () {
@@ -2329,18 +2329,18 @@ function d7t1130pm() {
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d7t1130pm")){
+		for (const ele of document.getElementsByClassName("d6t1130pm")){
 			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
 				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 		// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d7t1130pm")) {
+      for (const ele of document.getElementsByClassName("d6t1130pm")) {
         ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d7t1130pm")) {
+        for (const allEllements of document.getElementsByClassName("d6t1130pm")) {
           allEllements.innerHTML = "Finalizó";
         }
       }
@@ -2348,4 +2348,4 @@ function d7t1130pm() {
   }, 1000);
 }
 
-d7t1130pm()
+d6t1130pm()
