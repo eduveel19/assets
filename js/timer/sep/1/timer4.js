@@ -1,4 +1,4 @@
-var yyyy = 2021; var mm = 09; var dd = 03;
+var yyyy = 2021; var mm = 08; var dd = 02;
 
 var myTime = yyyy+mm+dd;
 var textLive = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p>";
@@ -6,7 +6,7 @@ var textRepe = "<p class='live-text'>Repetición <i class='fa fa-circle faa-flas
 var textEnd = "Finalizó";
 
 
-function d1t12am() {
+function d4t12am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -34,18 +34,30 @@ function d1t12am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t12am")){
+	for (const ele of document.getElementsByClassName("d4t12am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t12am")) {
+      for (const ele of document.getElementsByClassName("d4t12am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t12am")) {
+        for (const allEllements of document.getElementsByClassName("d4t12am")) {
+          allEllements.innerHTML = textEnd;
+        }
+      }
+    }
+        
+	// If the count down is over, write some text
+    if (distance < 0) {
+      for (const ele of document.getElementsByClassName("r1t12am")) {
+        ele.innerHTML = textRepe;
+      }
+      if (distance + 7200000 < 0) {
+        for (const allEllements of document.getElementsByClassName("r1t12am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -53,10 +65,10 @@ function d1t12am() {
   }, 1000);
 }
 
-d1t12am()
+d4t12am()
 
 
-function d1t1230am() {
+function d4t1230am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -84,18 +96,18 @@ function d1t1230am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1230am")){
+	for (const ele of document.getElementsByClassName("d4t1230am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1230am")) {
+      for (const ele of document.getElementsByClassName("d4t1230am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1230am")) {
+        for (const allEllements of document.getElementsByClassName("d4t1230am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -103,10 +115,10 @@ function d1t1230am() {
   }, 1000);
 }
 
-d1t1230am()
+d4t1230am()
 
 
-function d1t1am() {
+function d4t1am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -134,18 +146,18 @@ function d1t1am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1am")){
+	for (const ele of document.getElementsByClassName("d4t1am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1am")) {
+      for (const ele of document.getElementsByClassName("d4t1am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1am")) {
+        for (const allEllements of document.getElementsByClassName("d4t1am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -153,10 +165,10 @@ function d1t1am() {
   }, 1000);
 }
 
-d1t1am()
+d4t1am()
 
 
-function d1t130am() {
+function d4t130am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -184,18 +196,18 @@ function d1t130am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t130am")){
+	for (const ele of document.getElementsByClassName("d4t130am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t130am")) {
+      for (const ele of document.getElementsByClassName("d4t130am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t130am")) {
+        for (const allEllements of document.getElementsByClassName("d4t130am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -203,10 +215,10 @@ function d1t130am() {
   }, 1000);
 }
 
-d1t130am()
+d4t130am()
 
 
-function d1t2am() {
+function d4t2am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -234,18 +246,18 @@ function d1t2am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t2am")){
+	for (const ele of document.getElementsByClassName("d4t2am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t2am")) {
+      for (const ele of document.getElementsByClassName("d4t2am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t2am")) {
+        for (const allEllements of document.getElementsByClassName("d4t2am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -253,10 +265,10 @@ function d1t2am() {
   }, 1000);
 }
 
-d1t2am()
+d4t2am()
 
 
-function d1t230am() {
+function d4t230am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -284,18 +296,18 @@ function d1t230am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t230am")){
+	for (const ele of document.getElementsByClassName("d4t230am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t230am")) {
+      for (const ele of document.getElementsByClassName("d4t230am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t230am")) {
+        for (const allEllements of document.getElementsByClassName("d4t230am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -303,10 +315,10 @@ function d1t230am() {
   }, 1000);
 }
 
-d1t230am()
+d4t230am()
 
 
-function d1t3am() {
+function d4t3am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -334,18 +346,18 @@ function d1t3am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t3am")){
+	for (const ele of document.getElementsByClassName("d4t3am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t3am")) {
+      for (const ele of document.getElementsByClassName("d4t3am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t3am")) {
+        for (const allEllements of document.getElementsByClassName("d4t3am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -353,10 +365,10 @@ function d1t3am() {
   }, 1000);
 }
 
-d1t3am()
+d4t3am()
 
 
-function d1t330() {
+function d4t330() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -384,18 +396,18 @@ function d1t330() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t330")){
+	for (const ele of document.getElementsByClassName("d4t330")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t330")) {
+      for (const ele of document.getElementsByClassName("d4t330")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t330")) {
+        for (const allEllements of document.getElementsByClassName("d4t330")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -403,10 +415,10 @@ function d1t330() {
   }, 1000);
 }
 
-d1t330()
+d4t330()
 
 
-function d1t4am() {
+function d4t4am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -434,18 +446,18 @@ function d1t4am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t4am")){
+	for (const ele of document.getElementsByClassName("d4t4am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t4am")) {
+      for (const ele of document.getElementsByClassName("d4t4am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t4am")) {
+        for (const allEllements of document.getElementsByClassName("d4t4am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -453,10 +465,10 @@ function d1t4am() {
   }, 1000);
 }
 
-d1t4am()
+d4t4am()
 
 
-function d1t430am() {
+function d4t430am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -484,18 +496,18 @@ function d1t430am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t430am")){
+	for (const ele of document.getElementsByClassName("d4t430am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t430am")) {
+      for (const ele of document.getElementsByClassName("d4t430am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t430am")) {
+        for (const allEllements of document.getElementsByClassName("d4t430am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -503,12 +515,12 @@ function d1t430am() {
   }, 1000);
 }
 
-d1t430am()
+d4t430am()
 
 var yyyy = 2021; var mm = 07; var dd = 17;
 
 
-function d1t5am() {
+function d4t5am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -536,18 +548,18 @@ function d1t5am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t5am")){
+	for (const ele of document.getElementsByClassName("d4t5am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t5am")) {
+      for (const ele of document.getElementsByClassName("d4t5am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t5am")) {
+        for (const allEllements of document.getElementsByClassName("d4t5am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -555,10 +567,10 @@ function d1t5am() {
   }, 1000);
 }
 
-d1t5am()
+d4t5am()
 
 
-function d1t530am() {
+function d4t530am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -586,18 +598,18 @@ function d1t530am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t530am")){
+	for (const ele of document.getElementsByClassName("d4t530am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t530am")) {
+      for (const ele of document.getElementsByClassName("d4t530am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t530am")) {
+        for (const allEllements of document.getElementsByClassName("d4t530am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -605,10 +617,10 @@ function d1t530am() {
   }, 1000);
 }
 
-d1t530am()
+d4t530am()
 
 
-function d1t6am() {
+function d4t6am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -636,18 +648,18 @@ function d1t6am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t6am")){
+	for (const ele of document.getElementsByClassName("d4t6am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t6am")) {
+      for (const ele of document.getElementsByClassName("d4t6am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t6am")) {
+        for (const allEllements of document.getElementsByClassName("d4t6am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -655,10 +667,10 @@ function d1t6am() {
   }, 1000);
 }
 
-d1t6am()
+d4t6am()
 
 
-function d1t630am() {
+function d4t630am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -686,18 +698,18 @@ function d1t630am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t630am")){
+	for (const ele of document.getElementsByClassName("d4t630am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t630am")) {
+      for (const ele of document.getElementsByClassName("d4t630am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t630am")) {
+        for (const allEllements of document.getElementsByClassName("d4t630am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -705,10 +717,10 @@ function d1t630am() {
   }, 1000);
 }
 
-d1t630am()
+d4t630am()
 
 
-function d1t7am() {
+function d4t7am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -736,18 +748,18 @@ function d1t7am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t7am")){
+	for (const ele of document.getElementsByClassName("d4t7am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t7am")) {
+      for (const ele of document.getElementsByClassName("d4t7am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t7am")) {
+        for (const allEllements of document.getElementsByClassName("d4t7am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -755,10 +767,10 @@ function d1t7am() {
   }, 1000);
 }
 
-d1t7am()
+d4t7am()
 
 
-function d1t730am() {
+function d4t730am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -786,18 +798,18 @@ function d1t730am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t730am")){
+	for (const ele of document.getElementsByClassName("d4t730am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t730am")) {
+      for (const ele of document.getElementsByClassName("d4t730am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t730am")) {
+        for (const allEllements of document.getElementsByClassName("d4t730am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -805,10 +817,10 @@ function d1t730am() {
   }, 1000);
 }
 
-d1t730am()
+d4t730am()
 
 
-function d1t8am() {
+function d4t8am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -836,18 +848,18 @@ function d1t8am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t8am")){
+	for (const ele of document.getElementsByClassName("d4t8am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t8am")) {
+      for (const ele of document.getElementsByClassName("d4t8am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t8am")) {
+        for (const allEllements of document.getElementsByClassName("d4t8am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -855,10 +867,10 @@ function d1t8am() {
   }, 1000);
 }
 
-d1t8am()
+d4t8am()
 
 
-function d1t830am() {
+function d4t830am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -886,18 +898,18 @@ function d1t830am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t830am")){
+	for (const ele of document.getElementsByClassName("d4t830am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t830am")) {
+      for (const ele of document.getElementsByClassName("d4t830am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t830am")) {
+        for (const allEllements of document.getElementsByClassName("d4t830am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -905,10 +917,10 @@ function d1t830am() {
   }, 1000);
 }
 
-d1t830am()
+d4t830am()
 
 
-function d1t9am() {
+function d4t9am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -936,18 +948,18 @@ function d1t9am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t9am")){
+	for (const ele of document.getElementsByClassName("d4t9am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t9am")) {
+      for (const ele of document.getElementsByClassName("d4t9am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t9am")) {
+        for (const allEllements of document.getElementsByClassName("d4t9am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -955,10 +967,10 @@ function d1t9am() {
   }, 1000);
 }
 
-d1t9am()
+d4t9am()
 
 
-function d1t930am() {
+function d4t930am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -986,18 +998,18 @@ function d1t930am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t930am")){
+	for (const ele of document.getElementsByClassName("d4t930am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t930am")) {
+      for (const ele of document.getElementsByClassName("d4t930am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t930am")) {
+        for (const allEllements of document.getElementsByClassName("d4t930am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1005,10 +1017,10 @@ function d1t930am() {
   }, 1000);
 }
 
-d1t930am()
+d4t930am()
 
 
-function d1t10am() {
+function d4t10am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1036,18 +1048,18 @@ function d1t10am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t10am")){
+	for (const ele of document.getElementsByClassName("d4t10am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t10am")) {
+      for (const ele of document.getElementsByClassName("d4t10am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t10am")) {
+        for (const allEllements of document.getElementsByClassName("d4t10am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1055,10 +1067,10 @@ function d1t10am() {
   }, 1000);
 }
 
-d1t10am()
+d4t10am()
 
 
-function d1t1030am() {
+function d4t1030am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1086,18 +1098,18 @@ function d1t1030am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1030am")){
+	for (const ele of document.getElementsByClassName("d4t1030am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1030am")) {
+      for (const ele of document.getElementsByClassName("d4t1030am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1030am")) {
+        for (const allEllements of document.getElementsByClassName("d4t1030am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1105,12 +1117,12 @@ function d1t1030am() {
   }, 1000);
 }
 
-d1t1030am()
+d4t1030am()
 
 var yyyy = 2021; var mm = 07; var dd = 17;
 
 
-function d1t11am() {
+function d4t11am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1138,18 +1150,18 @@ function d1t11am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t11am")){
+	for (const ele of document.getElementsByClassName("d4t11am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t11am")) {
+      for (const ele of document.getElementsByClassName("d4t11am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t11am")) {
+        for (const allEllements of document.getElementsByClassName("d4t11am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1157,10 +1169,10 @@ function d1t11am() {
   }, 1000);
 }
 
-d1t11am()
+d4t11am()
 
 
-function d1t1130am() {
+function d4t1130am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1188,18 +1200,18 @@ function d1t1130am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1130am")){
+	for (const ele of document.getElementsByClassName("d4t1130am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1130am")) {
+      for (const ele of document.getElementsByClassName("d4t1130am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1130am")) {
+        for (const allEllements of document.getElementsByClassName("d4t1130am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1207,15 +1219,15 @@ function d1t1130am() {
   }, 1000);
 }
 
-d1t1130am()
+d4t1130am()
 
 
-function d1t12am() {
+function d4t12pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              12:00 AM                  ::::::::::::
+    //::::::::::::              12:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, MM, SS));
@@ -1238,18 +1250,18 @@ function d1t12am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t12am")){
+	for (const ele of document.getElementsByClassName("d4t12pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t12am")) {
+      for (const ele of document.getElementsByClassName("d4t12pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t12am")) {
+        for (const allEllements of document.getElementsByClassName("d4t12pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1257,15 +1269,15 @@ function d1t12am() {
   }, 1000);
 }
 
-d1t12am()
+d4t12pm()
 
 
-function d1t1230am() {
+function d4t1230pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              12:30 AM                  ::::::::::::
+    //::::::::::::              12:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, MM, SS));
@@ -1288,18 +1300,18 @@ function d1t1230am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1230am")){
+	for (const ele of document.getElementsByClassName("d4t1230pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1230am")) {
+      for (const ele of document.getElementsByClassName("d4t1230pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1230am")) {
+        for (const allEllements of document.getElementsByClassName("d4t1230pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1307,10 +1319,10 @@ function d1t1230am() {
   }, 1000);
 }
 
-d1t1230am()
+d4t1230pm()
 
 
-function d1t1pm() {
+function d4t1pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1338,18 +1350,18 @@ function d1t1pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1pm")){
+	for (const ele of document.getElementsByClassName("d4t1pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1pm")) {
+      for (const ele of document.getElementsByClassName("d4t1pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t1pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1357,10 +1369,10 @@ function d1t1pm() {
   }, 1000);
 }
 
-d1t1pm()
+d4t1pm()
 
 
-function d1t130pm() {
+function d4t130pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1388,18 +1400,18 @@ function d1t130pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t130pm")){
+	for (const ele of document.getElementsByClassName("d4t130pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t130pm")) {
+      for (const ele of document.getElementsByClassName("d4t130pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t130pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t130pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1407,10 +1419,10 @@ function d1t130pm() {
   }, 1000);
 }
 
-d1t130pm()
+d4t130pm()
 
 
-function d1t2pm() {
+function d4t2pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1438,18 +1450,18 @@ function d1t2pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t2pm")){
+	for (const ele of document.getElementsByClassName("d4t2pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t2pm")) {
+      for (const ele of document.getElementsByClassName("d4t2pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t2pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t2pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1457,10 +1469,10 @@ function d1t2pm() {
   }, 1000);
 }
 
-d1t2pm()
+d4t2pm()
 
 
-function d1t230pm() {
+function d4t230pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1488,18 +1500,18 @@ function d1t230pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t230pm")){
+	for (const ele of document.getElementsByClassName("d4t230pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t230pm")) {
+      for (const ele of document.getElementsByClassName("d4t230pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t230pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t230pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1507,10 +1519,10 @@ function d1t230pm() {
   }, 1000);
 }
 
-d1t230pm()
+d4t230pm()
 
 
-function d1t3pm() {
+function d4t3pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1538,18 +1550,18 @@ function d1t3pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t3pm")){
+	for (const ele of document.getElementsByClassName("d4t3pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t3pm")) {
+      for (const ele of document.getElementsByClassName("d4t3pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t3pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t3pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1557,10 +1569,10 @@ function d1t3pm() {
   }, 1000);
 }
 
-d1t3pm()
+d4t3pm()
 
 
-function d1t330pm() {
+function d4t330pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1588,18 +1600,18 @@ function d1t330pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t330pm")){
+	for (const ele of document.getElementsByClassName("d4t330pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t330pm")) {
+      for (const ele of document.getElementsByClassName("d4t330pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t330pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t330pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1607,10 +1619,10 @@ function d1t330pm() {
   }, 1000);
 }
 
-d1t330pm()
+d4t330pm()
 
 
-function d1t4pm() {
+function d4t4pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1638,18 +1650,18 @@ function d1t4pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t4pm")){
+	for (const ele of document.getElementsByClassName("d4t4pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t4pm")) {
+      for (const ele of document.getElementsByClassName("d4t4pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t4pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t4pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1657,10 +1669,10 @@ function d1t4pm() {
   }, 1000);
 }
 
-d1t4pm()
+d4t4pm()
 
 
-function d1t430pm() {
+function d4t430pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1688,18 +1700,18 @@ function d1t430pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t430pm")){
+	for (const ele of document.getElementsByClassName("d4t430pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t430pm")) {
+      for (const ele of document.getElementsByClassName("d4t430pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t430pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t430pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1707,10 +1719,10 @@ function d1t430pm() {
   }, 1000);
 }
 
-d1t430pm()
+d4t430pm()
 
 
-function d1t5pm() {
+function d4t5pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1738,18 +1750,18 @@ function d1t5pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t5pm")){
+	for (const ele of document.getElementsByClassName("d4t5pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t5pm")) {
+      for (const ele of document.getElementsByClassName("d4t5pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t5pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t5pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1757,10 +1769,10 @@ function d1t5pm() {
   }, 1000);
 }
 
-d1t5pm()
+d4t5pm()
 
 
-function d1t530pm() {
+function d4t530pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1788,18 +1800,18 @@ function d1t530pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t530pm")){
+	for (const ele of document.getElementsByClassName("d4t530pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t530pm")) {
+      for (const ele of document.getElementsByClassName("d4t530pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t530pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t530pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1807,10 +1819,10 @@ function d1t530pm() {
   }, 1000);
 }
 
-d1t530pm()
+d4t530pm()
 
 
-function d1t6pm() {
+function d4t6pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1838,18 +1850,18 @@ function d1t6pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t6pm")){
+	for (const ele of document.getElementsByClassName("d4t6pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t6pm")) {
+      for (const ele of document.getElementsByClassName("d4t6pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t6pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t6pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1857,10 +1869,10 @@ function d1t6pm() {
   }, 1000);
 }
 
-d1t6pm()
+d4t6pm()
 
 
-function d1t630pm() {
+function d4t630pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1888,18 +1900,18 @@ function d1t630pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t630pm")){
+	for (const ele of document.getElementsByClassName("d4t630pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t630pm")) {
+      for (const ele of document.getElementsByClassName("d4t630pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t630pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t630pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1907,10 +1919,10 @@ function d1t630pm() {
   }, 1000);
 }
 
-d1t630pm()
+d4t630pm()
 
 
-function d1t7pm() {
+function d4t7pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1938,18 +1950,18 @@ function d1t7pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t7pm")){
+	for (const ele of document.getElementsByClassName("d4t7pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t7pm")) {
+      for (const ele of document.getElementsByClassName("d4t7pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t7pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t7pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1957,10 +1969,10 @@ function d1t7pm() {
   }, 1000);
 }
 
-d1t7pm()
+d4t7pm()
 
 
-function d1t730pm() {
+function d4t730pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1988,18 +2000,18 @@ function d1t730pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t730pm")){
+	for (const ele of document.getElementsByClassName("d4t730pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t730pm")) {
+      for (const ele of document.getElementsByClassName("d4t730pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t730pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t730pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2007,10 +2019,10 @@ function d1t730pm() {
   }, 1000);
 }
 
-d1t730pm()
+d4t730pm()
 
 
-function d1t8pm() {
+function d4t8pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2038,18 +2050,18 @@ function d1t8pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t8pm")){
+	for (const ele of document.getElementsByClassName("d4t8pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t8pm")) {
+      for (const ele of document.getElementsByClassName("d4t8pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t8pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t8pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2057,10 +2069,10 @@ function d1t8pm() {
   }, 1000);
 }
 
-d1t8pm()
+d4t8pm()
 
 
-function d1t830pm() {
+function d4t830pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2088,18 +2100,18 @@ function d1t830pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t830pm")){
+	for (const ele of document.getElementsByClassName("d4t830pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t830pm")) {
+      for (const ele of document.getElementsByClassName("d4t830pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t830pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t830pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2107,10 +2119,10 @@ function d1t830pm() {
   }, 1000);
 }
 
-d1t830pm()
+d4t830pm()
 
 
-function d1t9pm() {
+function d4t9pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2138,18 +2150,18 @@ function d1t9pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t9pm")){
+	for (const ele of document.getElementsByClassName("d4t9pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t9pm")) {
+      for (const ele of document.getElementsByClassName("d4t9pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t9pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t9pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2157,10 +2169,10 @@ function d1t9pm() {
   }, 1000);
 }
 
-d1t9pm()
+d4t9pm()
 
 
-function d1t930pm() {
+function d4t930pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2188,18 +2200,18 @@ function d1t930pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t930pm")){
+	for (const ele of document.getElementsByClassName("d4t930pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t930pm")) {
+      for (const ele of document.getElementsByClassName("d4t930pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t930pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t930pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2207,10 +2219,10 @@ function d1t930pm() {
   }, 1000);
 }
 
-d1t930pm()
+d4t930pm()
 
 
-function d1t10pm() {
+function d4t10pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2238,18 +2250,18 @@ function d1t10pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t10pm")){
+	for (const ele of document.getElementsByClassName("d4t10pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t10pm")) {
+      for (const ele of document.getElementsByClassName("d4t10pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t10pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t10pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2257,10 +2269,10 @@ function d1t10pm() {
   }, 1000);
 }
 
-d1t10pm()
+d4t10pm()
 
 
-function d1t1030pm() {
+function d4t1030pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2288,18 +2300,18 @@ function d1t1030pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1030pm")){
+	for (const ele of document.getElementsByClassName("d4t1030pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1030pm")) {
+      for (const ele of document.getElementsByClassName("d4t1030pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1030pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t1030pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2308,8 +2320,8 @@ function d1t1030pm() {
 }
 
 
-d1t1030pm()
-function d1t11pm() {
+d4t1030pm()
+function d4t11pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2337,18 +2349,18 @@ function d1t11pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t11pm")){
+	for (const ele of document.getElementsByClassName("d4t11pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t11pm")) {
+      for (const ele of document.getElementsByClassName("d4t11pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t11pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t11pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2356,10 +2368,10 @@ function d1t11pm() {
   }, 1000);
 }
 
-d1t11pm()
+d4t11pm()
 
 
-function d1t1130pm() {
+function d4t1130pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2387,18 +2399,18 @@ function d1t1130pm() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1130pm")){
+	for (const ele of document.getElementsByClassName("d4t1130pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1130pm")) {
+      for (const ele of document.getElementsByClassName("d4t1130pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1130pm")) {
+        for (const allEllements of document.getElementsByClassName("d4t1130pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -2406,4 +2418,4 @@ function d1t1130pm() {
   }, 1000);
 }
 
-d1t1130pm()
+d4t1130pm()

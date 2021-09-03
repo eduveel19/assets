@@ -1,4 +1,4 @@
-var yyyy = 2021; var mm = 09; var dd = 03;
+var yyyy = 2021; var mm = 08; var dd = 03;
 
 var myTime = yyyy+mm+dd;
 var textLive = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p>";
@@ -46,6 +46,18 @@ function d1t12am() {
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d1t12am")) {
+          allEllements.innerHTML = textEnd;
+        }
+      }
+    }
+        
+	// If the count down is over, write some text
+    if (distance < 0) {
+      for (const ele of document.getElementsByClassName("r1t12am")) {
+        ele.innerHTML = textRepe;
+      }
+      if (distance + 7200000 < 0) {
+        for (const allEllements of document.getElementsByClassName("r1t12am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1210,12 +1222,12 @@ function d1t1130am() {
 d1t1130am()
 
 
-function d1t12am() {
+function d1t12pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              12:00 AM                  ::::::::::::
+    //::::::::::::              12:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, MM, SS));
@@ -1238,18 +1250,18 @@ function d1t12am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t12am")){
+	for (const ele of document.getElementsByClassName("d1t12pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t12am")) {
+      for (const ele of document.getElementsByClassName("d1t12pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t12am")) {
+        for (const allEllements of document.getElementsByClassName("d1t12pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1257,15 +1269,15 @@ function d1t12am() {
   }, 1000);
 }
 
-d1t12am()
+d1t12pm()
 
 
-function d1t1230am() {
+function d1t1230pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              12:30 AM                  ::::::::::::
+    //::::::::::::              12:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	//                                   (AAAA, MM, DD, HH, MM, SS));
@@ -1288,18 +1300,18 @@ function d1t1230am() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d1t1230am")){
+	for (const ele of document.getElementsByClassName("d1t1230pm")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d1t1230am")) {
+      for (const ele of document.getElementsByClassName("d1t1230pm")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d1t1230am")) {
+        for (const allEllements of document.getElementsByClassName("d1t1230pm")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -1307,7 +1319,7 @@ function d1t1230am() {
   }, 1000);
 }
 
-d1t1230am()
+d1t1230pm()
 
 
 function d1t1pm() {
