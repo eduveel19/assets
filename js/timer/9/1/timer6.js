@@ -50,18 +50,6 @@ function d6t12am() {
         }
       }
     }
-        
-	// If the count down is over, write some text
-    if (distance < 0) {
-      for (const ele of document.getElementsByClassName("r1t12am")) {
-        ele.innerHTML = textRepe;
-      }
-      if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("r1t12am")) {
-          allEllements.innerHTML = textEnd;
-        }
-      }
-    }
   }, 1000);
 }
 
