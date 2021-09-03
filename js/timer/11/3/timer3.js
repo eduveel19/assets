@@ -1,44 +1,64 @@
+var yyyy = 2021; var mm = 08; var dd = 15;
+
+var myTime = yyyy+mm+dd;
+var textLive = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p>";
+var textRepe = "<p class='live-text'>Repetición <i class='fa fa-circle faa-flash animated'></i></p>"
+var textEnd = "Finalizó";
+
+
 function d3t12am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              12:00 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 07, 00, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              12:00 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 00, 00, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t12am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t12am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t12am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t12am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
+        }
+      }
+    }
+        
+	// If the count down is over, write some text
+    if (distance < 0) {
+      for (const ele of document.getElementsByClassName("r1t12am")) {
+        ele.innerHTML = textRepe;
+      }
+      if (distance + 7200000 < 0) {
+        for (const allEllements of document.getElementsByClassName("r1t12am")) {
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -47,47 +67,48 @@ function d3t12am() {
 
 d3t12am()
 
+
 function d3t1230am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              12:30 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 07, 30, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              12:30 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 00, 30, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t1230am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1230am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1230am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1230am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -96,47 +117,48 @@ function d3t1230am() {
 
 d3t1230am()
 
+
 function d3t1am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              1:00 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 08, 00, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              01:00 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 01, 00, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t1am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -145,47 +167,48 @@ function d3t1am() {
 
 d3t1am()
 
+
 function d3t130am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              1:30 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 08, 30, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              01:30 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 01, 30, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t130am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t130am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t130am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t130am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -194,47 +217,48 @@ function d3t130am() {
 
 d3t130am()
 
+
 function d3t2am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              2:00 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 09, 00, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              02:00 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 02, 00, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t2am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t2am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t2am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t2am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -243,47 +267,48 @@ function d3t2am() {
 
 d3t2am()
 
+
 function d3t230am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              2:30 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14,  09, 30, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              02:30 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 02, 30, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t230am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t230am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t230am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t230am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -292,47 +317,48 @@ function d3t230am() {
 
 d3t230am()
 
+
 function d3t3am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              3:00 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 10, 00, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              03:00 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 03, 00, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t3am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t3am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t3am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t3am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -341,96 +367,98 @@ function d3t3am() {
 
 d3t3am()
 
-function d3t330am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              3:30 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 10, 30, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+function d3t330() {
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              03:30 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 03, 30, 00));
 
-    // Get todays date and time
-    var now = new Date().getTime();
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t330am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t330")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d3t330am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+      for (const ele of document.getElementsByClassName("d3t330")) {
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d3t330am")) {
-          allEllements.innerHTML = "Finalizó";
+        for (const allEllements of document.getElementsByClassName("d3t330")) {
+          allEllements.innerHTML = textEnd;
         }
       }
     }
   }, 1000);
 }
 
-d3t330am()
+d3t330()
+
 
 function d3t4am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              4:00 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 11, 00, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              04:00 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 04, 00, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t4am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t4am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t4am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t4am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -439,47 +467,48 @@ function d3t4am() {
 
 d3t4am()
 
+
 function d3t430am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              4:30 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 11, 30, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              04:30 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 04, 30, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t430am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t430am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t430am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t430am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -488,47 +517,50 @@ function d3t430am() {
 
 d3t430am()
 
+var yyyy = 2021; var mm = 07; var dd = 17;
+
+
 function d3t5am() {
-  // Set the date we're counting down to
-  // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //::::::::::::              5:00 AM                  ::::::::::::
-  //::::::::::::                                       ::::::::::::
-  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  //                                   (AAAA, MM, DD, HH, mm, S ));
-  var countDownDate = new Date(Date.UTC(2021, 06, 14, 12, 00, 00));
+    // Set the date we're counting down to
+    // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //::::::::::::              05:00 AM                  ::::::::::::
+    //::::::::::::                                       ::::::::::::
+    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 05, 00, 00));
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+// Update the count down every 1 second
+    var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-    var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    for (const ele of document.getElementsByClassName("d3t5am")) {
-      ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> " +
-        minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-    }
-
-    // If the count down is over, write some text
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t5am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+		}
+        
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t5am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t5am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -537,47 +569,48 @@ function d3t5am() {
 
 d3t5am()
 
+
 function d3t530am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              5:30 AM                  ::::::::::::
+    //::::::::::::              05:30 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 12,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 05, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t530am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t530am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t530am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t530am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -586,47 +619,48 @@ function d3t530am() {
 
 d3t530am()
 
+
 function d3t6am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              6:00 AM                  ::::::::::::
+    //::::::::::::              06:00 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 13,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 06, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t6am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t6am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t6am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t6am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -635,47 +669,48 @@ function d3t6am() {
 
 d3t6am()
 
+
 function d3t630am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              6:30 AM                  ::::::::::::
+    //::::::::::::              06:30 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 13,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 06, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t630am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t630am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t630am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t630am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -684,47 +719,48 @@ function d3t630am() {
 
 d3t630am()
 
+
 function d3t7am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              7:00 AM                  ::::::::::::
+    //::::::::::::              07:00 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 14,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 07, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t7am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t7am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t7am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t7am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -733,47 +769,48 @@ function d3t7am() {
 
 d3t7am()
 
+
 function d3t730am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              7:30 AM                  ::::::::::::
+    //::::::::::::              07:30 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 14,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 07, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t730am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t730am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t730am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t730am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -782,47 +819,48 @@ function d3t730am() {
 
 d3t730am()
 
+
 function d3t8am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              8:00 AM                  ::::::::::::
+    //::::::::::::              08:00 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 15,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 08, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t8am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t8am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t8am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t8am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -831,47 +869,48 @@ function d3t8am() {
 
 d3t8am()
 
+
 function d3t830am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              8:30 AM                  ::::::::::::
+    //::::::::::::              08:30 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 15,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 08, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t830am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t830am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t830am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t830am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -880,47 +919,48 @@ function d3t830am() {
 
 d3t830am()
 
+
 function d3t9am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              9:00 AM                  ::::::::::::
+    //::::::::::::              09:00 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 16,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 09, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t9am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t9am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t9am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t9am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -929,47 +969,48 @@ function d3t9am() {
 
 d3t9am()
 
+
 function d3t930am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              9:30 AM                  ::::::::::::
+    //::::::::::::              09:30 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 16,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 09, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t930am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t930am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t930am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t930am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -977,6 +1018,7 @@ function d3t930am() {
 }
 
 d3t930am()
+
 
 function d3t10am() {
     // Set the date we're counting down to
@@ -986,39 +1028,39 @@ function d3t10am() {
     //::::::::::::              10:00 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 17,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 10, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t10am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t10am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t10am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t10am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1026,6 +1068,7 @@ function d3t10am() {
 }
 
 d3t10am()
+
 
 function d3t1030am() {
     // Set the date we're counting down to
@@ -1035,39 +1078,39 @@ function d3t1030am() {
     //::::::::::::              10:30 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 17,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 10, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t1030am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1030am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1030am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1030am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1075,6 +1118,9 @@ function d3t1030am() {
 }
 
 d3t1030am()
+
+var yyyy = 2021; var mm = 07; var dd = 17;
+
 
 function d3t11am() {
     // Set the date we're counting down to
@@ -1084,39 +1130,39 @@ function d3t11am() {
     //::::::::::::              11:00 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 18,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 11, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t11am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t11am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t11am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t11am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1124,6 +1170,7 @@ function d3t11am() {
 }
 
 d3t11am()
+
 
 function d3t1130am() {
     // Set the date we're counting down to
@@ -1133,39 +1180,39 @@ function d3t1130am() {
     //::::::::::::              11:30 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 18,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 11, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t1130am")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1130am")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1130am")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1130am")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1174,47 +1221,48 @@ function d3t1130am() {
 
 d3t1130am()
 
+
 function d3t12pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              12:00 AM                  ::::::::::::
+    //::::::::::::              12:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 19,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 12, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t12pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t12pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t12pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t12pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1223,47 +1271,48 @@ function d3t12pm() {
 
 d3t12pm()
 
+
 function d3t1230pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              12:30 AM                  ::::::::::::
+    //::::::::::::              12:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 19,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 12, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t1230pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1230pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1230pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1230pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1272,47 +1321,48 @@ function d3t1230pm() {
 
 d3t1230pm()
 
+
 function d3t1pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              1:00 PM                  ::::::::::::
+    //::::::::::::              01:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 20,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 13, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t1pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1321,47 +1371,48 @@ function d3t1pm() {
 
 d3t1pm()
 
+
 function d3t130pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              1:30 PM                  ::::::::::::
+    //::::::::::::              01:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 20,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 13, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t130pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t130pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t130pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t130pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1370,47 +1421,48 @@ function d3t130pm() {
 
 d3t130pm()
 
+
 function d3t2pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              2:00 PM                  ::::::::::::
+    //::::::::::::              02:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 21,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 14, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t2pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t2pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t2pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t2pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1419,47 +1471,48 @@ function d3t2pm() {
 
 d3t2pm()
 
+
 function d3t230pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              2:30 PM                  ::::::::::::
+    //::::::::::::              02:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 21,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 14, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t230pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t230pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t230pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t230pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1468,47 +1521,48 @@ function d3t230pm() {
 
 d3t230pm()
 
+
 function d3t3pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              3:00 PM                  ::::::::::::
+    //::::::::::::              03:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 22,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 15, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t3pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t3pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t3pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t3pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1517,47 +1571,48 @@ function d3t3pm() {
 
 d3t3pm()
 
+
 function d3t330pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              3:30 PM                  ::::::::::::
+    //::::::::::::              03:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 22,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 15, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t330pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t330pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t330pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t330pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1566,47 +1621,48 @@ function d3t330pm() {
 
 d3t330pm()
 
+
 function d3t4pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              4:00 PM                  ::::::::::::
+    //::::::::::::              04:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 23,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 16, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t4pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t4pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t4pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t4pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1615,47 +1671,48 @@ function d3t4pm() {
 
 d3t4pm()
 
+
 function d3t430pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              4:30 PM                  ::::::::::::
+    //::::::::::::              04:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 14, 23,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 16, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t430pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t430pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t430pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t430pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1664,47 +1721,48 @@ function d3t430pm() {
 
 d3t430pm()
 
+
 function d3t5pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              5:00 PM                  ::::::::::::
+    //::::::::::::              05:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 00,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 17, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t5pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t5pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t5pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t5pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1713,47 +1771,48 @@ function d3t5pm() {
 
 d3t5pm()
 
+
 function d3t530pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              5:30 PM                  ::::::::::::
+    //::::::::::::              05:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 00,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 17, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t530pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t530pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t530pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t530pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1762,47 +1821,48 @@ function d3t530pm() {
 
 d3t530pm()
 
+
 function d3t6pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              6:00 PM                  ::::::::::::
+    //::::::::::::              06:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 01,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 18, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t6pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t6pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t6pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t6pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1811,47 +1871,48 @@ function d3t6pm() {
 
 d3t6pm()
 
+
 function d3t630pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              6:30 PM                  ::::::::::::
+    //::::::::::::              06:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 01,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 18, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t630pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t630pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t630pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t630pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1860,47 +1921,48 @@ function d3t630pm() {
 
 d3t630pm()
 
+
 function d3t7pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              7:00 PM                  ::::::::::::
+    //::::::::::::              07:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 02,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 19, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t7pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t7pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t7pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t7pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1909,47 +1971,48 @@ function d3t7pm() {
 
 d3t7pm()
 
+
 function d3t730pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              7:30 PM                  ::::::::::::
+    //::::::::::::              07:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 02,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 19, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t730pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t730pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t730pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t730pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -1958,47 +2021,48 @@ function d3t730pm() {
 
 d3t730pm()
 
+
 function d3t8pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              8:00 PM                  ::::::::::::
+    //::::::::::::              08:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 03,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 20, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t8pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t8pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t8pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t8pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -2007,47 +2071,48 @@ function d3t8pm() {
 
 d3t8pm()
 
+
 function d3t830pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              8:30 PM                  ::::::::::::
+    //::::::::::::              08:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 03,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 20, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t830pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t830pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t830pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t830pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -2056,47 +2121,48 @@ function d3t830pm() {
 
 d3t830pm()
 
+
 function d3t9pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              9:00 PM                  ::::::::::::
+    //::::::::::::              09:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 04,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 21, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t9pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t9pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t9pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t9pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -2105,47 +2171,48 @@ function d3t9pm() {
 
 d3t9pm()
 
+
 function d3t930pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     //::::::::::::                                       ::::::::::::
-    //::::::::::::              9:30 PM                  ::::::::::::
+    //::::::::::::              09:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 04,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 21, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t930pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t930pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t930pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t930pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -2153,6 +2220,7 @@ function d3t930pm() {
 }
 
 d3t930pm()
+
 
 function d3t10pm() {
     // Set the date we're counting down to
@@ -2162,39 +2230,39 @@ function d3t10pm() {
     //::::::::::::              10:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 05,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 22, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t10pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t10pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t10pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t10pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -2202,6 +2270,7 @@ function d3t10pm() {
 }
 
 d3t10pm()
+
 
 function d3t1030pm() {
     // Set the date we're counting down to
@@ -2211,47 +2280,47 @@ function d3t1030pm() {
     //::::::::::::              10:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 05,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 22, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t1030pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1030pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1030pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1030pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
   }, 1000);
 }
 
-d3t1030pm()
 
+d3t1030pm()
 function d3t11pm() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
@@ -2260,39 +2329,39 @@ function d3t11pm() {
     //::::::::::::              11:00 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 04,00,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 23, 00, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t11pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t11pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t11pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t11pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
@@ -2300,6 +2369,7 @@ function d3t11pm() {
 }
 
 d3t11pm()
+
 
 function d3t1130pm() {
     // Set the date we're counting down to
@@ -2309,39 +2379,39 @@ function d3t1130pm() {
     //::::::::::::              11:30 PM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	//                                   (AAAA, MM, DD, HH, mm, S ));
-	var countDownDate = new Date(Date.UTC(2021, 06, 15, 04,30,00));
+	//                                   (AAAA, MM, DD, HH, MM, SS));
+	var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 23, 30, 00));
 
 // Update the count down every 1 second
-	var x = setInterval(function () {
+    var x = setInterval(function () {
 
-		// Get todays date and time
-		var now = new Date().getTime();
+	// Get todays date and time
+	var now = new Date().getTime();
 
-		// Find the distance between now an the count down date
-		// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-		var distance = countDownDate - now - (3600000 * 1);
+	// Find the distance between now an the count down date
+	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+	var distance = countDownDate - now - (3600000 * -6);
 
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Output the result in an element with id="demo"
-		for (const ele of document.getElementsByClassName("d3t1130pm")){
-			ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-				+ minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+	// Output the result in an element with id="demo"
+	for (const ele of document.getElementsByClassName("d3t1130pm")){
+	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
+       + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
-		// If the count down is over, write some text
+	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d3t1130pm")) {
-        ele.innerHTML = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p> ";
+        ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
         for (const allEllements of document.getElementsByClassName("d3t1130pm")) {
-          allEllements.innerHTML = "Finalizó";
+          allEllements.innerHTML = textEnd;
         }
       }
     }
