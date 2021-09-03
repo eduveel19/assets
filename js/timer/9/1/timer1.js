@@ -1105,8 +1105,6 @@ function d1t1030am() {
 
 d1t1030am()
 
-var yyyy = 2021; var mm = 07; var dd = 17;
-
 
 function d1t11am() {
     // Set the date we're counting down to

@@ -505,8 +505,6 @@ function d4t430am() {
 
 d4t430am()
 
-var yyyy = 2021; var mm = 07; var dd = 17;
-
 
 function d4t5am() {
     // Set the date we're counting down to
@@ -1106,8 +1104,6 @@ function d4t1030am() {
 }
 
 d4t1030am()
-
-var yyyy = 2021; var mm = 07; var dd = 17;
 
 
 function d4t11am() {
