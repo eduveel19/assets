@@ -356,7 +356,7 @@ function d4t3am() {
 d4t3am()
 
 
-function d4t330() {
+function d4t330am() {
     // Set the date we're counting down to
     // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -384,18 +384,18 @@ function d4t330() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	for (const ele of document.getElementsByClassName("d4t330")){
+	for (const ele of document.getElementsByClassName("d4t330am")){
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
         
 	// If the count down is over, write some text
     if (distance < 0) {
-      for (const ele of document.getElementsByClassName("d4t330")) {
+      for (const ele of document.getElementsByClassName("d4t330am")) {
         ele.innerHTML = textLive;
       }
       if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("d4t330")) {
+        for (const allEllements of document.getElementsByClassName("d4t330am")) {
           allEllements.innerHTML = textEnd;
         }
       }
@@ -403,7 +403,7 @@ function d4t330() {
   }, 1000);
 }
 
-d4t330()
+d4t330am()
 
 
 function d4t4am() {
