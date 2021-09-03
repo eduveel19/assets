@@ -517,8 +517,6 @@ function d3t430am() {
 
 d3t430am()
 
-var yyyy = 2021; var mm = 07; var dd = 17;
-
 
 function d3t5am() {
     // Set the date we're counting down to
@@ -1118,8 +1116,6 @@ function d3t1030am() {
 }
 
 d3t1030am()
-
-var yyyy = 2021; var mm = 07; var dd = 17;
 
 
 function d3t11am() {
