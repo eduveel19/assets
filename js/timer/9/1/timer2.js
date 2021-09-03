@@ -50,18 +50,6 @@ function d2t12am() {
         }
       }
     }
-        
-	// If the count down is over, write some text
-    if (distance < 0) {
-      for (const ele of document.getElementsByClassName("r1t12am")) {
-        ele.innerHTML = textRepe;
-      }
-      if (distance + 7200000 < 0) {
-        for (const allEllements of document.getElementsByClassName("r1t12am")) {
-          allEllements.innerHTML = textEnd;
-        }
-      }
-    }
   }, 1000);
 }
 
@@ -516,8 +504,6 @@ function d2t430am() {
 }
 
 d2t430am()
-
-var yyyy = 2021; var mm = 07; var dd = 17;
 
 
 function d2t5am() {
@@ -1118,8 +1104,6 @@ function d2t1030am() {
 }
 
 d2t1030am()
-
-var yyyy = 2021; var mm = 07; var dd = 17;
 
 
 function d2t11am() {
