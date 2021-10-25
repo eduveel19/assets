@@ -1,4 +1,4 @@
-var yyyy = 2021; var mm = 08; var dd = 02;
+var yyyy = 2021; var mm = 09; var dd = 28;
 
 var myTime = yyyy+mm+dd;
 var textLive = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p>";
@@ -38,7 +38,7 @@ function d4t12am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t12am")) {
@@ -50,7 +50,7 @@ function d4t12am() {
         }
       }
     }
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("r1t12am")) {
@@ -100,7 +100,7 @@ function d4t1230am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1230am")) {
@@ -150,7 +150,7 @@ function d4t1am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1am")) {
@@ -200,7 +200,7 @@ function d4t130am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t130am")) {
@@ -250,7 +250,7 @@ function d4t2am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t2am")) {
@@ -300,7 +300,7 @@ function d4t230am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t230am")) {
@@ -350,7 +350,7 @@ function d4t3am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t3am")) {
@@ -400,7 +400,7 @@ function d4t330() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t330")) {
@@ -450,7 +450,7 @@ function d4t4am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t4am")) {
@@ -500,7 +500,7 @@ function d4t430am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t430am")) {
@@ -552,7 +552,7 @@ function d4t5am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t5am")) {
@@ -602,7 +602,7 @@ function d4t530am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t530am")) {
@@ -652,7 +652,7 @@ function d4t6am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t6am")) {
@@ -702,7 +702,7 @@ function d4t630am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t630am")) {
@@ -752,7 +752,7 @@ function d4t7am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t7am")) {
@@ -802,7 +802,7 @@ function d4t730am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t730am")) {
@@ -852,7 +852,7 @@ function d4t8am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t8am")) {
@@ -902,7 +902,7 @@ function d4t830am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t830am")) {
@@ -952,7 +952,7 @@ function d4t9am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t9am")) {
@@ -1002,7 +1002,7 @@ function d4t930am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t930am")) {
@@ -1052,7 +1052,7 @@ function d4t10am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t10am")) {
@@ -1102,7 +1102,7 @@ function d4t1030am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1030am")) {
@@ -1154,7 +1154,7 @@ function d4t11am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t11am")) {
@@ -1204,7 +1204,7 @@ function d4t1130am() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1130am")) {
@@ -1254,7 +1254,7 @@ function d4t12pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t12pm")) {
@@ -1304,7 +1304,7 @@ function d4t1230pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1230pm")) {
@@ -1354,7 +1354,7 @@ function d4t1pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1pm")) {
@@ -1404,7 +1404,7 @@ function d4t130pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t130pm")) {
@@ -1454,7 +1454,7 @@ function d4t2pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t2pm")) {
@@ -1504,7 +1504,7 @@ function d4t230pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t230pm")) {
@@ -1554,7 +1554,7 @@ function d4t3pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t3pm")) {
@@ -1604,7 +1604,7 @@ function d4t330pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t330pm")) {
@@ -1654,7 +1654,7 @@ function d4t4pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t4pm")) {
@@ -1704,7 +1704,7 @@ function d4t430pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t430pm")) {
@@ -1754,7 +1754,7 @@ function d4t5pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t5pm")) {
@@ -1804,7 +1804,7 @@ function d4t530pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t530pm")) {
@@ -1854,7 +1854,7 @@ function d4t6pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t6pm")) {
@@ -1904,7 +1904,7 @@ function d4t630pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t630pm")) {
@@ -1954,7 +1954,7 @@ function d4t7pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t7pm")) {
@@ -2004,7 +2004,7 @@ function d4t730pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t730pm")) {
@@ -2054,7 +2054,7 @@ function d4t8pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t8pm")) {
@@ -2104,7 +2104,7 @@ function d4t830pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t830pm")) {
@@ -2154,7 +2154,7 @@ function d4t9pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t9pm")) {
@@ -2204,7 +2204,7 @@ function d4t930pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t930pm")) {
@@ -2254,7 +2254,7 @@ function d4t10pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t10pm")) {
@@ -2304,7 +2304,7 @@ function d4t1030pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1030pm")) {
@@ -2353,7 +2353,7 @@ function d4t11pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t11pm")) {
@@ -2403,7 +2403,7 @@ function d4t1130pm() {
 	   ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
        + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
 		}
-        
+
 	// If the count down is over, write some text
     if (distance < 0) {
       for (const ele of document.getElementsByClassName("d4t1130pm")) {
