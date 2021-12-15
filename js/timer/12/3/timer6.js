@@ -1,4 +1,4 @@
-var yyyy = 2021; var mm = 08; var dd = 18;
+var yyyy = 2021; var mm = 11; var dd = 18;
 
 var myTime = yyyy+mm+dd;
 var textLive = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p>";
@@ -25,7 +25,7 @@ function d6t12am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -87,7 +87,7 @@ function d6t1230am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -137,7 +137,7 @@ function d6t1am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -187,7 +187,7 @@ function d6t130am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -237,7 +237,7 @@ function d6t2am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -287,7 +287,7 @@ function d6t230am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -337,7 +337,7 @@ function d6t3am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -387,7 +387,7 @@ function d6t330am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -437,7 +437,7 @@ function d6t4am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -487,7 +487,7 @@ function d6t430am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -537,7 +537,7 @@ function d6t5am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -587,7 +587,7 @@ function d6t530am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -637,7 +637,7 @@ function d6t6am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -687,7 +687,7 @@ function d6t630am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -737,7 +737,7 @@ function d6t7am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -787,7 +787,7 @@ function d6t730am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -837,7 +837,7 @@ function d6t8am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -887,7 +887,7 @@ function d6t830am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -937,7 +937,7 @@ function d6t9am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -987,7 +987,7 @@ function d6t930am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1037,7 +1037,7 @@ function d6t10am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1087,7 +1087,7 @@ function d6t1030am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1137,7 +1137,7 @@ function d6t11am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1187,7 +1187,7 @@ function d6t1130am() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1237,7 +1237,7 @@ function d6t12pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1287,7 +1287,7 @@ function d6t1230pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1337,7 +1337,7 @@ function d6t1pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1387,7 +1387,7 @@ function d6t130pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1437,7 +1437,7 @@ function d6t2pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1487,7 +1487,7 @@ function d6t230pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1537,7 +1537,7 @@ function d6t3pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1587,7 +1587,7 @@ function d6t330pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1637,7 +1637,7 @@ function d6t4pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1687,7 +1687,7 @@ function d6t430pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1737,7 +1737,7 @@ function d6t5pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1787,7 +1787,7 @@ function d6t530pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1837,7 +1837,7 @@ function d6t6pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1887,7 +1887,7 @@ function d6t630pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1937,7 +1937,7 @@ function d6t7pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -1987,7 +1987,7 @@ function d6t730pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2037,7 +2037,7 @@ function d6t8pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2087,7 +2087,7 @@ function d6t830pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2137,7 +2137,7 @@ function d6t9pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2187,7 +2187,7 @@ function d6t930pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2237,7 +2237,7 @@ function d6t10pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2287,7 +2287,7 @@ function d6t1030pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2336,7 +2336,7 @@ function d6t11pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -2386,7 +2386,7 @@ function d6t1130pm() {
 
 	// Find the distance between now an the count down date
 	// GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
-	var distance = countDownDate - now - (3600000 * -6);
+	var distance = countDownDate - now - (3600000 * 1);
 
 	// Time calculations for days, hours, minutes and seconds
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
