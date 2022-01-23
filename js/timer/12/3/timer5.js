@@ -1,4 +1,4 @@
-var yyyy = 2022; var mm = 00; var dd = 20;
+var yyyy = 2022; var mm = 00; var dd = 28;
 
 var myTime = yyyy+mm+dd;
 var textLive = "<p class='live-text'>En Vivo <i class='fa fa-circle faa-flash animated'></i></p>";
